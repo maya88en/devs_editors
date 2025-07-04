@@ -18,7 +18,7 @@ const LoginPage = () => {
     const { data, error } = await supabase.auth.signInWithOtp({
       email: emailAddress,
       options: {
-        emailRedirectTo: "https://devs-editors-tt88.vercel.app/login",
+        emailRedirectTo: "https://devs-editors-tt88.vercel.app/",
       },
     });
 
