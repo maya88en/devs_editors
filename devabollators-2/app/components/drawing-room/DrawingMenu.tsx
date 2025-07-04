@@ -12,7 +12,7 @@ type DrawingMenuProp = {
 const DEFAULT_COLORS = ["#000000", "#FF0000", "#00FF00", "#0000FF", "#FFFF00"];
 
 const DRAW_SIZES = [
-  { size: 1, height: 10, width: 10 },
+  { size: 1, height: 5, width: 5 },
   { size: 2, height: 15, width: 15 },
   { size: 5, height: 20, width: 20 },
   { size: 10, height: 25, width: 25 },
@@ -125,7 +125,7 @@ const DrawingMenu = (props: DrawingMenuProp) => {
       </div>
 
       <div
-        className='cursor-pointer rounded-full border border-slate-400 text-slate-800 opacity-90 h-10 w-10 flex items-center justify-center'
+        className='cursor-pointer rounded-full border border-slate-400 text-slate-800 opacity-90 h-50 w-10 flex items-center justify-center'
         style={{
           background: isEraserActive ? "#cbd5e1" : "transparent",
         }}

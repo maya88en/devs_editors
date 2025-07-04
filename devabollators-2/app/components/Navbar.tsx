@@ -17,7 +17,7 @@ const Navbar = (props: Props) => {
   const isRoomOwner = owner?.id === session?.user.id;
 
   return (
-    <nav className='bg-white z-20 border border-slate-200 w-full p-4'>
+    <nav className='bg-black z-20 border border-slate-200 w-full p-4'>
       <div className='mx-auto flex justify-between items-center'>
         <section className='flex gap-2 items-center'>
           <a
@@ -61,34 +61,20 @@ const Navbar = (props: Props) => {
           ) : null}
           {!isRoom && session && (
             <>
-              <span className='text-slate-400'>·</span>
-              <h3 className='text-slate-500'>
+              <span className='text-slate-300'>·</span>
+              <h3 className='text-slate-300'>
                 Welcome back @{session?.user?.user_metadata?.userName}
               </h3>
             </>
           )}
         </section>
-        <section className='flex items-center gap-2'>
+        <section className='text-slate-500'>
           {isRoom && (
             <a
               href='/'
               target='_blank'
-              className='flex items-center font-semibold text-sm px-2.5 py-2 rounded-full gap-1 bg-blue-600 text-white hover:bg-blue-500'
+              className='text-slate-500'
             >
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                fill='none'
-                viewBox='0 0 24 24'
-                strokeWidth={1.5}
-                stroke='currentColor'
-                className='w-5 h-5'
-              >
-                <path
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                  d='M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25'
-                />
-              </svg>
 
               <span>Dashboard</span>
               
@@ -97,11 +83,53 @@ const Navbar = (props: Props) => {
             
             
           )}
-          {/* <div
-            className={`h-10 w-10 overflow-hidden rounded-full`}
-            style={{ background: session?.user?.user_metadata?.userColor }}
-          /> */}
         </section>
+
+        <section className='text-slate-500'>
+          {isRoom && (
+            <a
+              
+              href='https://sharetext.vercel.app/'
+              target='_blank'
+              className='text-slate-500'
+            >
+              <span>ShareText</span>
+              
+            </a>
+            
+          )}
+        </section>
+
+        <section className='text-slate-500'>
+          {isRoom && (
+            <a
+              
+              href='https://codeanywhere.com/languages/ruby-on-rails'
+              target='_blank'
+              className='text-slate-500'
+            >
+              <span>Codeanywhere Rails</span>
+              
+            </a>
+            
+          )}
+        </section>
+
+        <section className='text-slate-500'>
+          {isRoom && (
+            <a
+              
+              href='https://replit.com/@replit/Rails'
+              target='_blank'
+              className='text-slate-500'
+            >
+              <span>Replit Rails</span>
+              
+            </a>
+            
+          )}
+        </section>
+
 
         <section className='flex items-center gap-2'>
           {isRoom && (
@@ -109,7 +137,7 @@ const Navbar = (props: Props) => {
               // href='https://syncfiddle.net/fiddle/-O6h5BrUTh7b5ftAJDs9'
               href='https://syncfiddle.net/'
               target='_blank'
-              className='flex items-center font-semibold text-sm px-2.5 py-2 rounded-full gap-1 bg-yellow-600 text-white hover:bg-green-500'
+              className='flex items-center text-slate-500'
             >
               <svg
                 xmlns='http://www.w3.org/2000/svg'

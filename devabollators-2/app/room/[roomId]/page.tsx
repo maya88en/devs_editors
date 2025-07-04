@@ -8,7 +8,7 @@ import Navbar from "../../components/Navbar";
 import BoardContainer from "@/app/components/drawing-room/BoardContainer";
 // import SampleComponent from "../../components/drawing-room/SampleComponent";
 // import BoardContainer2 from "@/app/components/drawing-room2/BoardContainer2";
-
+import Editor from "@/app/components/drawing-room/Editor"
 
 
 const DrawingRoomPage = () => {
@@ -65,9 +65,11 @@ const DrawingRoomPage = () => {
         </div>
       ) : (
         <div className='w-full flex flex-col-reverse xl:flex-row'>
-          <BoardContainer room={room} />
-          <section className='min-w-[15rem] max-w-[15rem] xl:min-h-0 relative mx-auto flex items-center xl:flex-col gap-3 text-black'>
+          <BoardContainer room={room} share={""} doc={undefined} />
+          
+          <section className='min-w-[15rem] max-w-[100rem] xl:min-h-0 relative mx-auto flex items-center xl:flex-col gap-3 text-black'>
             {/* <SampleComponent/>; */}  
+            <Editor />
           </section>
         </div>
       )}

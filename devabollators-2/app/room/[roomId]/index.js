@@ -2,7 +2,7 @@
 import dynamic from "next/dynamic";
 
 const DynamicComponent = dynamic(
-  () => import("../components/SampleComponent"),
+  () => import("../components/Editor"),
   {
     ssr: false,
   }

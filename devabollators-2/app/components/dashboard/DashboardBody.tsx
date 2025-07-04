@@ -6,6 +6,9 @@ import { RoomCard, RoomCardSkeleton } from "./RoomCard";
 import NewRoomModal from "./NewRoomModal";
 import { fetchUserDrawingRooms } from "@/app/services/drawing-room.service";
 import Header from "./Header";
+import Footer from "./Footer";
+
+
 
 export type RoomType = {
   id: string;
@@ -59,6 +62,7 @@ const DashboardBody = (props: Props) => {
       {hasNotCreatedARoom && (
         <p className='text-slate-600 text-center mt-3'>
           Your drawing rooms will display here when you create new rooms.
+          
         </p>
       )}
 
@@ -93,6 +97,16 @@ const DashboardBody = (props: Props) => {
         loadUserDrawingRooms={loadUserDrawingRooms}
         session={session}
       />
+      
+      <div className='max-w-5xl flex flex-col gap-10 mx-auto px-4 pt-10'>
+      {isDashboard && (
+        <Footer
+          session={session}
+          setShowCreateRoomModal={setShowCreateRoomModal}
+        />
+       
+      )}
+      </div>
     </div>
   );
 };
