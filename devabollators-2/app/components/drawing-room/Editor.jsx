@@ -246,8 +246,8 @@ server.listen(port, () => console.log(`Listening on port ${port}`));
       </ol>
     
     </div>
-    <h2>this is a text board </h2>
-    <h3>this is a text board </h3>
+    <h2></h2>
+    <h3> </h3>
     <textarea class="flex items-center bg-yellow text-black" id="code" style={{width: '500px', height: '500px'}}></textarea>
     <script src="/socket.io/socket.io.js"></script>
 
