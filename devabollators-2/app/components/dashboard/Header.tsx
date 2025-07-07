@@ -38,15 +38,12 @@ const Header = (props: Props) => {
         <li>Find <b>Devabollators</b></li>
         <li>Open the <b>Replit</b> link in the room</li>
         <li>Devabollate on the <b>coloured steps</b> in the room</li>
-        <li>Share and save team notes on <b>sharetext</b> link in the room</li>
-        <li>If you need a devabo assist, ask for the <b>Mentor</b> </li>
-
+        <li>Save team notes on <b>sharetext</b> link in the room,</li>
+        <li>Optional: Share the link and password of the <b>sharetext</b> with the mentor to add devabollators</li>
+        <li>If you need a devabo assist, ask for the <b>Mentor</b></li>
       </ol>
-      
-
-      <p></p>
-
     </section>
+
     <section className='w-full flex justify-between items-center'>
         <h3 className='text-slate-600 font-semibold text-blue-400'>
           Welcome back, @{session?.user?.user_metadata?.userName} 👋🏽

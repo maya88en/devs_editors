@@ -1,6 +1,7 @@
 
 import React, {useEffect} from 'react';
 
+
 const Editor = () => {
   useEffect(() => {
     window.onload=function(){
@@ -65,7 +66,7 @@ server.listen(port, () => console.log(`Listening on port ${port}`));
       </ol>
       <div class="bg-sky-500">
       <table>
-                <tr><th><b>First steps to create rails project</b></th></tr>
+                <tr><th><b>First steps to create a rails project, do not use the blue steps on Replit, already done for you</b></th></tr>
                 <tr class="hello">
                 <th >
                 <td class="float-left text-5xl text-blue-500 bg-gray-700">Blue steps</td>
@@ -77,9 +78,9 @@ server.listen(port, () => console.log(`Listening on port ${port}`));
       <li> bundle</li>
       <li> rails s</li>
       <br></br>
-      <div><b>Big Steps</b></div>
-      <li> In routes: get “about”, to: “about#index” </li>
-      <li> 
+      {/* <div><b>Big Steps</b></div> */}
+      {/* <li> In routes: get “about”, to: “about#index” </li> */}
+      {/* <li> 
         <div class="relative">In Controllers: create new file "about_controller.rb"
       <br></br>
       <pre>class AboutController &lt;ApplicationController</pre>
@@ -93,52 +94,83 @@ server.listen(port, () => console.log(`Listening on port ${port}`));
      because we didn’t write the html tags in the views file, we just wrote a header h1. The layouts folder is like that wrapper that has everything; like the favicons, stylesheet, JavaScript. </p>
       </div>
       </div>
-      </li>
+      </li> */}
       </th>
                 </tr>
                 </table>
       
       
       </div>
-      <div class="bg-orange-200">
+      <div class="bg-orange-200 text-slate-600 font-semibold text-blue-400">
       <table>
-                <tr><th><b>Let’s change the Homepage for our application: instead of localhost:3000</b></th></tr>
+                <tr><th><b>Homepage for the application</b></th></tr>
                 <tr class="hello">
                 <th >
                 <td class="float-left text-5xl text-orange-500 bg-gray-700">Orange steps</td>
                 <li><b>Routes</b>
       <br></br>
-      # Get the / to the main controller
+      <p>root to: “main/index”</p>
+      {/* # Get the / to the main controller */}
       <br></br>
-      <b>get “/”, to: “main/index”</b></li>
-      <li><b>Controllers</b>
-      <br></br>
-      # Create a new file called: main_controller.rb
-      <pre>class MainController &lt;ApplicationController</pre>
-      <pre>&nbsp;def index</pre> 
-      <pre>&nbsp;end</pre>
-      <pre>end</pre>
+      {/* <b>get “/”, to: “main/index”</b> */}
       </li>
+      <li style={{ textAlign: 'left' }}>In <b>Controllers</b> folder, add a new file <b> main_controller.rb</b> 
+      <br></br>
+      <br></br>
+      <p>class MainController &lt; ApplicationController
+      <p>&nbsp;def index</p>
+      <p>&nbsp;end</p>
+      <p>end</p></p>
+      </li>
+
       <li><b>Views</b>
       <br></br>
-      # Create a folder called “main” and a new file called “index.html.erb”
+      add a folder “main” and a new file “index.html.erb”
       <br></br>
-      # in the file:
-      <pre><h1> Welcome to the homepage </h1></pre>
+      
+      <p>&lt;h1 &gt; Welcome to the homepage &lt;/h1&gt;</p>
       <br></br>
-      # Go to the browser, refresh the localhost:3000 and it will show the homepage
+      <p >Run on Replit to see homepage</p>
+
+      <img        
+                  alt="homepage"
+                  width="800px"
+                  height="800px"
+                  src={`../homepage.png`}
+                 
+                  // style={{ borderRadius: "200%" }}
+                />
+
+      <br></br>
+      <h3 >Before moving to the  <b>Red Steps</b>, ask a devabollator to join you</h3>
+      <p> Use the realtime feature of Replit rails</p>
+      <p>How ?</p>
+      <p>Click on <b>invite</b> on your Replit project page and search for a user who has account on replit</p>
+      <p>The other devabollator accepts invite from email, or clicks on <b>Apps</b> and clicks <b>shared with me</b> on his/her Replit account</p>
+      <br></br>
+
+      <video width="800" height="800" controls
+        
+        src={`../devabo.mp4`} type="video"
+      
+      />
+      <br></br>
+      <p>After finishing the <b class="text-orange-500">Orange steps</b> with a devabollator, you can share the link and password of the <b>sharetext </b>with the Mentor so that other devabollators can join you later. </p>
+      <br></br>
+      <p>see the example below of a sharetext</p>
+      <br></br>
+      <a class="text-green-400" href="https://sharetext.vercel.app/?unique=21079">sharetext</a>
+      <p><b>password</b>&nbsp;1234</p>
+      <br></br>
+      {/* # Go to the browser, refresh the localhost:3000 and it will show the homepage
       </li>
-      <li>Now, go back to the routes and change the get “/”, to: “main/index” to <b>root to: “main/index”</b></li>
+      <li>Now, go back to the routes and change the get “/”, to: “main/index” to <b>root to: “main/index”</b> */}
+      </li>
                 </th>
                 </tr>
                 </table>
-
-        
-        
-        
-        
-      
       </div>
+
       <div class="bg-red-200">
       <div>
               <table>
