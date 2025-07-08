@@ -100,7 +100,7 @@ const Navbar = (props: Props) => {
           )}
         </section>
 
-        <section className='text-slate-500'>
+        {/* <section className='text-slate-500'>
           {isRoom && (
             <a
               
@@ -113,7 +113,7 @@ const Navbar = (props: Props) => {
             </a>
             
           )}
-        </section>
+        </section> */}
 
         <section className='text-slate-500'>
           {isRoom && (
