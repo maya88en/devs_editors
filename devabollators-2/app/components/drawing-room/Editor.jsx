@@ -103,18 +103,18 @@ server.listen(port, () => console.log(`Listening on port ${port}`));
       </div>
       <div class="bg-orange-200 text-slate-600 font-semibold text-blue-400">
       <table>
-                <tr><th><b>Homepage for the application</b></th></tr>
+                <tr><th><b></b></th></tr>
                 <tr class="hello">
                 <th >
                 <td class="float-left text-5xl text-orange-500 bg-gray-700">Orange steps</td>
-                <li><b>Routes</b>
+                <li>In <b class="text-2xl text-orange-500 bg-gray-700">Routes</b> folder, add the below code:
       <br></br>
-      <p>root to: “main/index”</p>
+      <p>root "main#index"</p>
       {/* # Get the / to the main controller */}
       <br></br>
       {/* <b>get “/”, to: “main/index”</b> */}
       </li>
-      <li style={{ textAlign: 'left' }}>In <b>Controllers</b> folder, add a new file <b> main_controller.rb</b> 
+      <li style={{ textAlign: 'left' }}>In <b class="text-2xl text-orange-500 bg-gray-700">Controllers</b> folder, add a new file <b> main_controller.rb</b>, with the following code:
       <br></br>
       <br></br>
       <p>class MainController &lt; ApplicationController
@@ -123,9 +123,9 @@ server.listen(port, () => console.log(`Listening on port ${port}`));
       <p>end</p></p>
       </li>
 
-      <li><b>Views</b>
+      <li>In <b class="text-2xl text-orange-500 bg-gray-700">Views</b> folder, 
       <br></br>
-      add a folder “main” and a new file “index.html.erb”
+      add a folder “main” and a new file “index.html.erb” with the following line: 
       <br></br>
       
       <p>&lt;h1 &gt; Welcome to the homepage &lt;/h1&gt;</p>
@@ -145,8 +145,8 @@ server.listen(port, () => console.log(`Listening on port ${port}`));
       <h3 >Before moving to the  <b>Red Steps</b>, ask a devabollator to join you</h3>
       <p> Use the realtime feature of Replit rails</p>
       <p>How ?</p>
-      <p>Click on <b>invite</b> on your Replit project page and search for a user who has account on replit</p>
-      <p>The other devabollator accepts invite from email, or clicks on <b>Apps</b> and clicks <b>shared with me</b> on his/her Replit account</p>
+      <p>Click on <b>invite</b> on your Replit project page and search for a user who has an account on replit.</p>
+      <p>The other devabollator accepts invite by email, or clicks on <b>Apps</b> and clicks <b>shared with me</b> on his/her Replit account.</p>
       <br></br>
 
       <video width="800" height="800" controls
