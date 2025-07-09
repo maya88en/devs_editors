@@ -110,7 +110,7 @@ const DashboardBody = (props: Props) => {
       </div>
       <div className='max-w-5xl flex flex-col gap-10 mx-auto px-4 pt-10'>
       {isDashboard && (
-        <AdsComponent dataAdSlot="YOUR_AD_UNIT_ID"
+        <AdsComponent dataAdSlot="ca-pub-7446299963890807"
           session={session}
           setShowCreateRoomModal={setShowCreateRoomModal}
         />
