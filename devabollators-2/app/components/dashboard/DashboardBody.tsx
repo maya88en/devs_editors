@@ -7,6 +7,7 @@ import NewRoomModal from "./NewRoomModal";
 import { fetchUserDrawingRooms } from "@/app/services/drawing-room.service";
 import Header from "./Header";
 import Footer from "./Footer";
+import AdsComponent from '../AdsComponent';
 
 
 
@@ -101,6 +102,15 @@ const DashboardBody = (props: Props) => {
       <div className='max-w-5xl flex flex-col gap-10 mx-auto px-4 pt-10'>
       {isDashboard && (
         <Footer
+          session={session}
+          setShowCreateRoomModal={setShowCreateRoomModal}
+        />
+       
+      )}
+      </div>
+      <div className='max-w-5xl flex flex-col gap-10 mx-auto px-4 pt-10'>
+      {isDashboard && (
+        <AdsComponent dataAdSlot="YOUR_AD_UNIT_ID"
           session={session}
           setShowCreateRoomModal={setShowCreateRoomModal}
         />
