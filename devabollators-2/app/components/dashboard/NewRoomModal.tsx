@@ -66,6 +66,7 @@ const NewRoomModal = (props: Props) => {
                 {isCreatingRoom ? "Please wait..." : "Create"}
               </button>
             </form>
+            
           </div>
         </div>
       )}

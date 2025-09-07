@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import DrawingMenu from "./DrawingMenu";
 import WhiteBoard from "./WhiteBoard";
+// import Supa from "@/app/components/drawing-room/Supa"
 // import SampleComponent from "./SampleComponent";
-
-
+// import Editor from "@/app/components/drawing-room/Editor"
+// import Learn from "@/app/components/drawing-room/Learn";
 
 // import Test from "./Test";
 
@@ -32,11 +33,15 @@ const BoardContainer: React.FC<BoardContainerProps> = (props) => {
 
 
   return (
-    <section className='relative flex flex-col xl:flex-row gap-1 bg-white h-screen'>
+    <section className='relative flex flex-col xl:flex-row gap-1 bg-black h-screen'>
       
       
       <DrawingMenu drawingPen={drawingPen} setDrawingPen={setDrawingPen} />
       <WhiteBoard drawingPen={drawingPen} room={room} />
+      
+      {/* <Editor />
+      <Learn /> */}
+      {/* <Supa drawingPen={drawingPen} room={room}  />  */}
       
       
       
@@ -46,6 +51,7 @@ const BoardContainer: React.FC<BoardContainerProps> = (props) => {
       {/* <SampleComponent drawingPen={drawingPen} setDrawingPen={setDrawingPen} room={room} />; */}
      
     </section>
+    
     
   );
 };

@@ -13,7 +13,7 @@ const Header = (props: Props) => {
       <p className='text-slate-600 font-semibold text-blue-400'>
       Devabollatros are Developers as Collaborators. 
         <h1><b>How ?</b></h1>
-      Developers choose a room (ex: Rails Room) and then collaborate on building a project using <b>easy steps</b>. 
+      Developers choose a room and then collaborate on building a project using <b>easy steps</b>. 
       {/* <p>After that, they earn a <b>Team Resume</b>.</p>  */}
 
       </p>
@@ -34,13 +34,15 @@ const Header = (props: Props) => {
       
       
       <ol className='list-decimal list-inside text-slate-600 font-semibold text-blue-400'>
-        <li>Open <b>Rails Room</b></li>
-        <li>Find <b>Devabollators</b></li>
-        <li>Open the <b>Replit</b> link in the room</li>
-        <li>Devabollate on the <b>coloured steps</b> in the room</li>
-        <li>Save team notes on <b>sharetext</b> link in the room,</li>
-        <li>Optional: Share the link and password of the <b>sharetext</b> with the mentor to add devabollators</li>
-        <li>If you need a devabo assist, ask for the <b>Mentor</b></li>
+        <li>Open <b>Rails Room</b>.</li>
+        <li>Find <b>Devabollators</b>.</li>
+        <li>Open the <b>Replit</b> link in the room & <b>sign in</b> to your Replit account.</li>
+        <li>Create a new project by clicking <b>" + Create App"</b>, and choose 'Rails' or 'React' whatever you want to start your first project with.</li>
+        <li>Send an invite to the project to a devabollator with a Replit account to do the project on real-time, following the steps in the Room.</li>
+        <li>Devabollate on the <b>colored steps</b> in the room.</li>
+        <li>Save team notes on <b>ShareText</b> link in the room.</li>
+        <li>Optional: Share the link and password of the <b>ShareText</b> with the mentor to add devabollators.</li>
+        <li>If you need a devabo assist, ask for the <b>Mentor</b>.</li>
       </ol>
     </section>
 

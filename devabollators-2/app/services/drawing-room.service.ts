@@ -1,4 +1,7 @@
+
 import { supabase } from "../lib/initSupabase";
+
+
 
 const DRAWING_ROOM_TABLE = "drawing-rooms"; // supabase table name
 
@@ -36,7 +39,10 @@ export const createDrawingRoom = async (
       .from(DRAWING_ROOM_TABLE)
       .select()
       .eq("id", id);
+      id
+      
     return data;
+    
   };
 
   export const updateRoomDrawing = async (roomId: string, drawing: any) => {
@@ -44,9 +50,15 @@ export const createDrawingRoom = async (
       .from(DRAWING_ROOM_TABLE)
       .update({
         drawing,
+        
       })
       .eq("id", roomId)
-      .select();
+      .select();  
   };
+
+
+
+  
+  
 
   

@@ -131,7 +131,7 @@ const Navbar = (props: Props) => {
         </section>
 
 
-        <section className='flex items-center gap-2'>
+        {/* <section className='flex items-center gap-2'>
           {isRoom && (
             <a
               // href='https://syncfiddle.net/fiddle/-O6h5BrUTh7b5ftAJDs9'
@@ -163,7 +163,7 @@ const Navbar = (props: Props) => {
             className={`h-10 w-10 overflow-hidden rounded-full`}
             style={{ background: session?.user?.user_metadata?.userColor }}
           />
-        </section>
+        </section> */}
         
       </div>
     </nav>

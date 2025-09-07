@@ -4,22 +4,11 @@ import { updateRoomDrawing } from "@/app/services/drawing-room.service";
 import { supabase } from "@/app/lib/initSupabase";
 import { fetchUserById, getUserSession } from "@/app/services/user.service";
 import { DrawingPen } from "./BoardContainer";
-// import SampleComponent from "./SampleComponent";
-
-// import SampleComponent from "./SampleComponent";
-
-// import BoardContainer from "../BoardContainer"
-
 
 interface BoardProps {
   room: any;
   drawingPen: DrawingPen;
-  // share: Share;
 }
-
-// export interface SampleComponent {
-//   doc: string;
-// }
 
 function WhiteBoard(props: BoardProps) {
   const { room, drawingPen } = props;
@@ -29,7 +18,7 @@ function WhiteBoard(props: BoardProps) {
   const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
   const [channel, setChannel] = useState<RealtimeChannel | null>(null);
   const [drawingData, setDrawingData] = useState<string | null>(null);
-  // const SampleComponent = useRef<SampleComponent>(null);
+
   const boardAreaRef = useRef<HTMLDivElement>(null);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
   const createdCursorsRef = useRef<string[]>([]);
@@ -75,7 +64,6 @@ function WhiteBoard(props: BoardProps) {
     [key: string]: any;
     type: "broadcast";
     event: string;
-    
   }) => {
     // console.log("Receiving cursor position: " + payload);
     const { userId: _userId, x, y } = payload || {};
@@ -84,32 +72,26 @@ function WhiteBoard(props: BoardProps) {
     if (cursorDiv) {
       cursorDiv.style.left = x + "px";
       cursorDiv.style.top = y + "px";
-      // SampleComponent
     } else {
       createUserMouseCursor(_userId);
     }
   };
 
   const sendMousePosition = (
-    channel: RealtimeChannel, 
-    
+    channel: RealtimeChannel,
     userId: string,
     x: number,
     y: number
-    
-    
   ) => {
     // console.log("Sending cursor position: ", { userId, x, y });
     return channel.send({
       type: "broadcast",
       event: MOUSE_EVENT,
       payload: { userId, x, y },
-      // SampleComponent 
     });
   };
 
   useEffect(() => {
-    // SampleComponent() && boardAreaRef?.current?.addEventListener("mousemove", (e) => {
     boardAreaRef?.current?.addEventListener("mousemove", (e) => {
       if (isAuthenticated && channel) {
         const container = document.querySelector("#container"); // Get the container
@@ -141,8 +123,7 @@ function WhiteBoard(props: BoardProps) {
       const client = supabase;
       const channel = client.channel(room.id);
       setChannel(channel);
-      
-      
+
       // Get updates from db changes
       client
         .channel("any")
@@ -150,28 +131,27 @@ function WhiteBoard(props: BoardProps) {
           "postgres_changes",
           { event: "*", schema: "public", table: "drawing-rooms" },
           (payload: any) => {
-            setDrawingData(payload.new.drawing); 
+            setDrawingData(payload.new.drawing);
           }
         )
-        .subscribe(); 
+        .subscribe();
     }
-  }, [isAuthenticated, room.id]); 
+  }, [isAuthenticated, room.id]);
 
   useEffect(() => {
     getUserSession().then((session) => {
       if (session?.user?.id) {
         setSession(session);
         setIsAuthenticated(true);
-        
       } else {
         setIsAuthenticated(false);
       }
     });
-  }, [session?.user?.id, session?.user?.user_metadata?.userColor]); 
+  }, [session?.user?.id, session?.user?.user_metadata?.userColor]);
 
   useEffect(() => {
     // Setting the initial image data from supabase
-    if (room.drawing) setDrawingData(room.drawing); 
+    if (room.drawing) setDrawingData(room.drawing);
   }, [room.drawing]);
 
   useEffect(() => {
@@ -180,7 +160,7 @@ function WhiteBoard(props: BoardProps) {
     const sketchStyle = getComputedStyle(sketch);
     canvas.width = parseInt(sketchStyle.getPropertyValue("width"));
     canvas.height = parseInt(sketchStyle.getPropertyValue("height"));
-    
+
     const mouse = { x: 0, y: 0 };
     const lastMouse = { x: 0, y: 0 };
 
@@ -192,7 +172,7 @@ function WhiteBoard(props: BoardProps) {
       };
     };
 
-    const ctx = canvas.getContext("2d"); 
+    const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
     /* Drawing on Whiteboard */
@@ -206,6 +186,19 @@ function WhiteBoard(props: BoardProps) {
       const image = new Image();
       image.onload = () => {
         ctx.drawImage(image, 0, 0);
+        // ctx.strokeStyle = 'grey';
+        // ctx.font = "bold 48px serif";
+        // ctx.strokeText("Hi everyone", 50, 200);
+        ctx.fillStyle = "lightblue";
+        ctx.font = "bold 16px Arial";
+        // ctx.textAlign = 'center';
+        // ctx.textBaseline = 'middle';
+        // ctx.fillText("Steps", (canvas.width / 2), (canvas.height / 2));
+        ctx.fillText("Ask a devabollator to join you, Use the realtime feature of Replit Rails, How ? ", 0, 50);
+        ctx.fillText("Click on 'invite' on your Replit project page and search for a user who has an account on Replit.", 0, 100)
+        ctx.fillText("The other devabollator accepts invite by email, or clicks on 'Apps', then clicks on 'shared with me' in his/her Replit account.", 0, 150)
+        ctx.fillStyle = "purple";
+        ctx.fillText("You can share the link and password of the ShareText with the Mentor so that other devabollators can join you.", 0, 200 )
       };
       image.src = drawingData;
     }
@@ -216,6 +209,7 @@ function WhiteBoard(props: BoardProps) {
       ctx.lineTo(mouse.x, mouse.y);
       ctx.closePath();
       ctx.stroke();
+      
 
       if (timeoutRef.current !== null) clearTimeout(timeoutRef.current);
       timeoutRef.current = setTimeout(() => {
@@ -253,22 +247,14 @@ function WhiteBoard(props: BoardProps) {
     ctx.strokeStyle = drawingPen.color;
   }, [drawingPen.size, drawingPen.color, canvas]);
 
-
-
-
-
-
   return (
-    <div className='my-auto w-96 h-96 border p-4'>
-      
-      <div className='w-96 h-96 relative' id='sketch' ref={boardAreaRef} >
-      
-        <div id='container' className='w-96 h-96'>
-          <canvas className='w-96 h-96' id='board'></canvas>
+    <div className='my-auto w-full h-full border p-2'>
+      <div className='w-full h-full relative' id='sketch' ref={boardAreaRef}>
+        
+        <div id='container' className='w-full h-full'>
+          <h3 className="text-5xl text-red-500">Devabollate on - <a href="#" target="_blank">Rails/React Steps</a></h3>
+          <canvas className='w-full h-full' id='board'></canvas>
         </div>
-      </div>
-      <div>
-        {/* <div id='doc' ref={SampleComponent}> */}
       </div>
     </div>
   );

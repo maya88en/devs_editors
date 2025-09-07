@@ -14,7 +14,7 @@ export const RoomCard = ({ id, name, created_at, isPublic }: RoomType) => {
           {createAt.getFullYear()}
         </span>
       </div>
-      <span className='rounded-full text-xs font-medium bg-green-100 py-1 px-2 text-green-600'>
+      <span className='rounded-full text-xs font-medium bg-blue-100 py-1 px-2 text-blue-600'>
         {isPublic ? "Public" : "Private"}
       </span>
     </Link>

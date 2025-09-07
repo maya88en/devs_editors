@@ -10,6 +10,7 @@ import Footer from "./Footer";
 
 
 
+
 export type RoomType = {
   id: string;
   name: string;
@@ -49,6 +50,8 @@ const DashboardBody = (props: Props) => {
       });
     }
   }, [session?.user?.id]);
+
+  
 
   return (
     <div className='max-w-5xl flex flex-col gap-10 mx-auto px-4 pt-10'>
@@ -110,5 +113,7 @@ const DashboardBody = (props: Props) => {
     </div>
   );
 };
+
+
 
 export default DashboardBody;

@@ -1,10 +1,7 @@
 import React, { useState } from "react";
-import { DrawingPen } from "@/app/components/drawing-room/BoardContainer";
-// import {Share} from "../drawing-room2/BoardContainer2"
-
+import { DrawingPen } from "./BoardContainer";
 
 type DrawingMenuProp = {
-  // share: Share;
   drawingPen: DrawingPen;
   setDrawingPen: Function;
 };
@@ -12,7 +9,7 @@ type DrawingMenuProp = {
 const DEFAULT_COLORS = ["#000000", "#FF0000", "#00FF00", "#0000FF", "#FFFF00"];
 
 const DRAW_SIZES = [
-  { size: 1, height: 5, width: 5 },
+  { size: 1, height: 10, width: 10 },
   { size: 2, height: 15, width: 15 },
   { size: 5, height: 20, width: 20 },
   { size: 10, height: 25, width: 25 },
@@ -32,7 +29,7 @@ const DrawingMenu = (props: DrawingMenuProp) => {
       setPreviousColor(drawingPen.color);
       setDrawingPen((prevState: DrawingPen) => ({
         ...prevState,
-        color: "#ffffff", // Set the eraser color to white
+        color: "black", // Set the eraser color to white
       }));
       setIsEraserActive(true);
     } else {
@@ -53,8 +50,8 @@ const DrawingMenu = (props: DrawingMenuProp) => {
   };
 
   return (
-    <div className='fixed z-10 bottom-0 border-t mx-auto w-full justify-center items-center flex xl:w-auto xl:relative xl:flex-col gap-10 xl:justify-start bg-white xl:rounded-sm p-4'>
-      <div className='xl:flex flex-col max-w-[100px] gap-10  bg-white rounded-lg'>
+    <div className='fixed z-10 bottom-0 border-t mx-auto w-full justify-center items-center flex xl:w-auto xl:relative xl:flex-col gap-10 xl:justify-start bg-grey sm:rounded-sm p-4'>
+      <div className='xl:flex flex-col max-w-[100px] gap-10  bg-grey rounded-sm'>
         <div
           className='cursor-pointer flex items-center justify-center h-10 w-10 rounded-full border border-slate-400 opacity-90'
           style={{ background: drawingPen.color }}
@@ -125,9 +122,9 @@ const DrawingMenu = (props: DrawingMenuProp) => {
       </div>
 
       <div
-        className='cursor-pointer rounded-full border border-slate-400 text-slate-800 opacity-90 h-50 w-10 flex items-center justify-center'
+        className='cursor-pointer rounded-full border border-slate-400 text-slate-800 opacity-90 h-50 w-50 flex items-center justify-center'
         style={{
-          background: isEraserActive ? "#cbd5e1" : "transparent",
+          background: isEraserActive ? "black" : "transparent",
         }}
         onClick={toggleEraser}
       >
@@ -146,7 +143,6 @@ const DrawingMenu = (props: DrawingMenuProp) => {
           />
         </svg>
       </div>
-      
     </div>
   );
 };
