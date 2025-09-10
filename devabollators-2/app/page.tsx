@@ -74,7 +74,7 @@ export default function Home() {
           setSession(session);
           setIsAuthenticating(false);
         } else {
-          window.location.href = "https://devabos.vercel.app/";
+          window.location.href = "https://devs-editors-qpcc.vercel.app/";
         }
       })
       .catch((error) => {

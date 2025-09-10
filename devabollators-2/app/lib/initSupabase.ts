@@ -37,7 +37,7 @@ export const adminAuthClient = supabaseWithAdminRole.auth.admin;
         // Handle error, e.g., show a message to the user
       } else {
         // Redirect to the dashboard after successful anonymous sign-in
-        window.location.href = "https://devabos.vercel.app/"; // Or use your router's navigation method
+        window.location.href = "https://devs-editors-qpcc.vercel.app/"; // Or use your router's navigation method
       }
     }
 
