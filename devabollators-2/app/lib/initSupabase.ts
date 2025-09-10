@@ -14,5 +14,32 @@ const supabaseWithAdminRole = createClient(supabaseUrl, service_role_key, {
   },
 });
 
+
 // Access auth admin api
 export const adminAuthClient = supabaseWithAdminRole.auth.admin;
+
+// export async function temporarilyDisableUser(userId: string) {
+//   const { data, error } = await supabaseWithAdminRole.auth.admin.updateUserById(userId, {
+//     ban_duration: '876600h', // Ban for approximately 100 years, effectively disabling login
+//   });
+
+//   if (error) {
+//     console.error('Error temporarily disabling user:', error.message);
+//   } else {
+//     console.log('User temporarily disabled:', data.user.id);
+//   }
+// }
+
+ export async function signInAnonymouslyAndRedirect() {
+      const { data, error } = await supabase.auth.signInAnonymously();
+      if (error) {
+        console.error('Error signing in anonymously:', error.message);
+        // Handle error, e.g., show a message to the user
+      } else {
+        // Redirect to the dashboard after successful anonymous sign-in
+        window.location.href = "https://devabos.vercel.app/"; // Or use your router's navigation method
+      }
+    }
+
+    // Call this function when your application starts or when the user navigates to the login page
+    // signInAnonymouslyAndRedirect();

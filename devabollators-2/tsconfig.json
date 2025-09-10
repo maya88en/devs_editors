@@ -21,6 +21,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/components/drawing-room/SampleComponent.jsx", "app/components/drawing-room/Editor.jsx", "app/components/drawing-room/DrawingMenu.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/components/drawing-room/SampleComponent.jsx", "app/components/drawing-room/Editor.jsx", "app/components/drawing-room/DrawingMenu.tsx", "app/components/drawing-room/GeneralInfo.jsx"],
   "exclude": ["node_modules"]
 }

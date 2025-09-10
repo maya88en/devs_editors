@@ -5,7 +5,14 @@ import { useEffect, useState } from "react";
 import { getUserSession } from "./services/user.service";
 import { supabase } from "./lib/initSupabase";
 import DashboardBody from "./components/dashboard/DashboardBody";
+// import DashboardBody from "@/app/components/dashboard/DashboardBody"
 // import SampleComponent from "./components/drawing-room/SampleComponent";
+import {signInAnonymouslyAndRedirect} from "../app/lib/initSupabase"
+
+ 
+
+    // Call this function when your application starts or when the user navigates to the login page
+    signInAnonymouslyAndRedirect();
 
 export default function Home() {
   const [session, setSession] = useState<any>();
@@ -67,7 +74,7 @@ export default function Home() {
           setSession(session);
           setIsAuthenticating(false);
         } else {
-          window.location.href = "/login";
+          window.location.href = "https://devabos.vercel.app/";
         }
       })
       .catch((error) => {
