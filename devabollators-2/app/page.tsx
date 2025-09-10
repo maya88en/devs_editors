@@ -74,7 +74,7 @@ export default function Home() {
           setSession(session);
           setIsAuthenticating(false);
         } else {
-          window.location.href = "./components/dashboard/DashboardBody";
+          window.location.href = "/";
         }
       })
       .catch((error) => {
