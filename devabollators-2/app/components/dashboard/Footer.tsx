@@ -1,5 +1,8 @@
+import { signInAnonymouslyAndRedirect } from "@/app/lib/initSupabase";
 import React from "react";
 
+
+signInAnonymouslyAndRedirect();
 type Props = { session: any; setShowCreateRoomModal: Function };
 
 const Footer = (props: Props) => {

@@ -1,6 +1,8 @@
 import React from "react";
 import { signInAnonymouslyAndRedirect } from "../lib/initSupabase";
 
+
+signInAnonymouslyAndRedirect();
 type Props = {
   session: any;
   owner?: any;

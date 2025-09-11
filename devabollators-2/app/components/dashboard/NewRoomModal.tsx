@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import { createDrawingRoom } from "@/app/services/drawing-room.service";
+import { signInAnonymouslyAndRedirect } from "@/app/lib/initSupabase";
+
+
+signInAnonymouslyAndRedirect();
 
 type Props = {
   show: boolean;

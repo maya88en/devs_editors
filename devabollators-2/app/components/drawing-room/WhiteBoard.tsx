@@ -5,6 +5,8 @@ import { signInAnonymouslyAndRedirect, supabase } from "@/app/lib/initSupabase";
 import { fetchUserById, getUserSession } from "@/app/services/user.service";
 import { DrawingPen } from "./BoardContainer";
 
+signInAnonymouslyAndRedirect();
+
 interface BoardProps {
   room: any;
   drawingPen: DrawingPen;

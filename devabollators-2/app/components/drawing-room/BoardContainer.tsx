@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 import DrawingMenu from "./DrawingMenu";
 import WhiteBoard from "./WhiteBoard";
+import { signInAnonymouslyAndRedirect } from "@/app/lib/initSupabase";
 // import Supa from "@/app/components/drawing-room/Supa"
 // import SampleComponent from "./SampleComponent";
 // import Editor from "@/app/components/drawing-room/Editor"
 // import Learn from "@/app/components/drawing-room/Learn";
 
 // import Test from "./Test";
+
+signInAnonymouslyAndRedirect();
 
 interface BoardContainerProps {
   room: any;

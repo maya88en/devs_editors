@@ -12,7 +12,7 @@ import {signInAnonymouslyAndRedirect} from "../app/lib/initSupabase"
  
 
     // Call this function when your application starts or when the user navigates to the login page
-    
+    signInAnonymouslyAndRedirect();
 
 export default function Home() {
   const [session, setSession] = useState<any>();
@@ -42,6 +42,7 @@ export default function Home() {
   }
 
   useEffect(() => {
+    signInAnonymouslyAndRedirect();
     getUserSession()
       .then((session) => {
         if (session) {
@@ -51,6 +52,7 @@ export default function Home() {
             !session?.user?.user_metadata?.userColor;
 
           if (isNewUser) {
+            signInAnonymouslyAndRedirect();
             const userName = createUsernameFromEmail(
               session?.user?.email as string
             );
@@ -75,14 +77,14 @@ export default function Home() {
           setSession(session);
           setIsAuthenticating(false);
         } else {
-          window.location.href = "/";
+          window.location.href = "https://devs-editors-qpcc.vercel.app/";
         }
       })
       .catch((error) => {
         throw new Error("Error occurred while fetching user session: " + error);
       });
   }, []);
-  
+  signInAnonymouslyAndRedirect();
   if (isAuthenticating) {
     signInAnonymouslyAndRedirect();
     return (

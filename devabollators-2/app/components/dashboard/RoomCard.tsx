@@ -1,5 +1,9 @@
 import Link from "next/link";
 import { RoomType } from "@/app/components/dashboard/DashboardBody";
+import { signInAnonymouslyAndRedirect } from "@/app/lib/initSupabase";
+
+
+signInAnonymouslyAndRedirect();
 
 export const RoomCard = ({ id, name, created_at, isPublic }: RoomType) => {
   const createAt = new Date(created_at);
