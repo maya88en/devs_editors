@@ -1,4 +1,5 @@
 import React from "react";
+import { signInAnonymouslyAndRedirect } from "../lib/initSupabase";
 
 type Props = {
   session: any;
@@ -15,7 +16,7 @@ const Navbar = (props: Props) => {
   const shouldShowRoomName = isRoom && room?.name;
   const shouldShowRoomVisibilityBadge = isRoom && !isLoadingRoom;
   const isRoomOwner = owner?.id === session?.user.id;
-
+  signInAnonymouslyAndRedirect();
   return (
     <nav className='bg-black z-20 border border-slate-200 w-full p-4'>
       <div className='mx-auto flex justify-between items-center'>

@@ -16,6 +16,7 @@ import Editor from "@/app/components/drawing-room/Editor"
 // import reactRoom from "@/app/components/drawing-room/Learn"
 import Learn from "@/app/components/drawing-room/Learn";
 import Footer2 from "@/app/components/drawing-room/Footer2";
+import { signInAnonymouslyAndRedirect } from "@/app/lib/initSupabase";
 
 
 
@@ -42,6 +43,7 @@ const DrawingRoomPage = () => {
 // };
 
   useEffect(() => {
+    signInAnonymouslyAndRedirect();
     getUserSession().then((session) => {
       setSession(session);
       setUser(session?.user);
@@ -65,7 +67,7 @@ const DrawingRoomPage = () => {
       });
     });
   }, []);
-
+  signInAnonymouslyAndRedirect();
   return (
     <main>
       <Navbar
