@@ -40,7 +40,7 @@ export const adminAuthClient = supabaseWithAdminRole.auth.admin;
         if (typeof window !== 'undefined') {
           // Access window or its properties here
           console.log(window.location.href);
-        }
+        
         // Empty dependency array ensures it runs once on mount
       
     
@@ -52,6 +52,7 @@ export const adminAuthClient = supabaseWithAdminRole.auth.admin;
         // Redirect to the dashboard after successful anonymous sign-in
         window.location.href = window.location.origin; // Or use your router's navigation method
       }
+    }
     }
     
 

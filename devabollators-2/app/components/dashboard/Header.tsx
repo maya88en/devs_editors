@@ -12,7 +12,7 @@ const Header = (props: Props) => {
       <br></br>
       <p className='text-slate-600 font-semibold text-blue-400'>
       Devabollatros are Developers as Collaborators. 
-        <h1><b>How ?</b></h1>
+        <b>How ?</b>
       Developers choose a room and then collaborate on building a project using <b>easy steps</b>. 
       {/* <p>After that, they earn a <b>Team Resume</b>.</p>  */}
 
