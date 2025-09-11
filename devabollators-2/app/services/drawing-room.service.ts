@@ -1,5 +1,5 @@
 
-import { supabase } from "../lib/initSupabase";
+import { signInAnonymouslyAndRedirect, supabase } from "../lib/initSupabase";
 
 
 
@@ -20,6 +20,7 @@ export const createDrawingRoom = async (
         password: null,
       })
       .select();
+      signInAnonymouslyAndRedirect();
   
     return data;
   };
@@ -30,6 +31,7 @@ export const createDrawingRoom = async (
       .select()
       .eq("owner", userId)
       .order("created_at", { ascending: false });
+      signInAnonymouslyAndRedirect();
   
     return data;
   };
@@ -40,6 +42,7 @@ export const createDrawingRoom = async (
       .select()
       .eq("id", id);
       id
+      signInAnonymouslyAndRedirect();
       
     return data;
     
@@ -54,6 +57,7 @@ export const createDrawingRoom = async (
       })
       .eq("id", roomId)
       .select();  
+      signInAnonymouslyAndRedirect();
   };
 
 

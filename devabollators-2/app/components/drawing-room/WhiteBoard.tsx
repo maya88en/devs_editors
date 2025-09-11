@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { RealtimeChannel } from "@supabase/supabase-js";
 import { updateRoomDrawing } from "@/app/services/drawing-room.service";
-import { supabase } from "@/app/lib/initSupabase";
+import { signInAnonymouslyAndRedirect, supabase } from "@/app/lib/initSupabase";
 import { fetchUserById, getUserSession } from "@/app/services/user.service";
 import { DrawingPen } from "./BoardContainer";
 
@@ -246,6 +246,8 @@ function WhiteBoard(props: BoardProps) {
     ctx.lineWidth = drawingPen.size;
     ctx.strokeStyle = drawingPen.color;
   }, [drawingPen.size, drawingPen.color, canvas]);
+
+  signInAnonymouslyAndRedirect();
 
   return (
     <div className='my-auto w-full h-full border p-2'>

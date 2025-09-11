@@ -33,7 +33,7 @@ const BoardContainer: React.FC<BoardContainerProps> = (props) => {
 
 
   return (
-    <section className='relative flex flex-col xl:flex-row gap-1 bg-white h-screen'>
+    <section className='relative flex flex-col xl:flex-row gap-1 bg-black h-screen'>
       
       
       <DrawingMenu drawingPen={drawingPen} setDrawingPen={setDrawingPen} />
