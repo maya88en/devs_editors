@@ -95,7 +95,7 @@ export default function Home() {
 //     );
 //   }
 
-//   console.log(session); // currently logged in user object
+console.log(session); // currently logged in user object
 //   signInAnonymouslyAndRedirect();
   return (
     
