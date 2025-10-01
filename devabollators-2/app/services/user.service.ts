@@ -1,16 +1,16 @@
-import { adminAuthClient, signInAnonymouslyAndRedirect, supabase } from "../lib/initSupabase";
+import { adminAuthClient, supabase } from "../lib/initSupabase";
 
 // User session
 export const getUserSession = async () => {
     const { data, error } = await supabase.auth.getSession();
-    signInAnonymouslyAndRedirect();
+    // signInAnonymouslyAndRedirect();
     return data.session;
     
   };
 
 // User profile
 export const fetchUserById = async (userId: string) => {
-    signInAnonymouslyAndRedirect();
+    // signInAnonymouslyAndRedirect();
     const { data, error } = await adminAuthClient.getUserById(userId);
     return data;
   };

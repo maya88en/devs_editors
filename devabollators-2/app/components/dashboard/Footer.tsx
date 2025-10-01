@@ -1,8 +1,8 @@
-import { signInAnonymouslyAndRedirect } from "@/app/lib/initSupabase";
+// import { signInAnonymouslyAndRedirect } from "@/app/lib/initSupabase";
 import React from "react";
 
 
-signInAnonymouslyAndRedirect();
+// signInAnonymouslyAndRedirect();
 type Props = { session: any; setShowCreateRoomModal: Function };
 
 const Footer = (props: Props) => {
@@ -15,7 +15,7 @@ const Footer = (props: Props) => {
       </h1>
       
       
-      <div className="text-slate-600 font-semibold text-blue-400 mt-6" style={{ fontSize: '12px' }}>
+      <div className="text-slate-600 font-semibold  mt-6" style={{ fontSize: '12px' }}>
         Special Thanks for <b>Varshith V Hegde</b> for the sharetext website
       </div>
       

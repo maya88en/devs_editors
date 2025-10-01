@@ -8,12 +8,12 @@ import { fetchUserDrawingRooms } from "@/app/services/drawing-room.service";
 import Header from "./Header";
 import Footer from "./Footer";
 
-import {signInAnonymouslyAndRedirect} from "@/app/lib/initSupabase"
+// import {signInAnonymouslyAndRedirect} from "@/app/lib/initSupabase"
 
  
 
     // Call this function when your application starts or when the user navigates to the login page
-    signInAnonymouslyAndRedirect();
+    // signInAnonymouslyAndRedirect();
 
 
 export type RoomType = {

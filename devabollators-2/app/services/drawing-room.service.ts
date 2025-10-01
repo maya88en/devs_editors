@@ -1,11 +1,11 @@
 
 import { supabase } from "../lib/initSupabase";
-import { signInAnonymouslyAndRedirect } from "@/app/lib/initSupabase";
+// import { signInAnonymouslyAndRedirect } from "@/app/lib/initSupabase";
 
 
 
 const DRAWING_ROOM_TABLE = "drawing-rooms"; // supabase table name
-signInAnonymouslyAndRedirect();
+// signInAnonymouslyAndRedirect();
 
 export const createDrawingRoom = async (
     name: string,
@@ -22,7 +22,7 @@ export const createDrawingRoom = async (
         password: null,
       })
       .select();
-    signInAnonymouslyAndRedirect();
+    // signInAnonymouslyAndRedirect();
     return data;
   };
 
@@ -32,7 +32,7 @@ export const createDrawingRoom = async (
       .select()
       .eq("owner", userId)
       .order("created_at", { ascending: false });
-    signInAnonymouslyAndRedirect();
+    // signInAnonymouslyAndRedirect();
     return data;
   };
 
@@ -42,13 +42,13 @@ export const createDrawingRoom = async (
       .select()
       .eq("id", id);
       id
-    signInAnonymouslyAndRedirect();
+    // signInAnonymouslyAndRedirect();
     return data;
     
   };
 
   export const updateRoomDrawing = async (roomId: string, drawing: any) => {
-    signInAnonymouslyAndRedirect();
+    // signInAnonymouslyAndRedirect();
     await supabase
       .from(DRAWING_ROOM_TABLE)
       .update({
@@ -57,7 +57,7 @@ export const createDrawingRoom = async (
       })
       .eq("id", roomId)
       .select();  
-      signInAnonymouslyAndRedirect();
+      // signInAnonymouslyAndRedirect();
   };
 
 

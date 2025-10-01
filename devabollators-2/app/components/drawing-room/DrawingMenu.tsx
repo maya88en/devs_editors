@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { DrawingPen } from "./BoardContainer";
-import { signInAnonymouslyAndRedirect } from "@/app/lib/initSupabase";
+// import { signInAnonymouslyAndRedirect } from "@/app/lib/initSupabase";
 
-signInAnonymouslyAndRedirect();
+// signInAnonymouslyAndRedirect();
 
 type DrawingMenuProp = {
   drawingPen: DrawingPen;

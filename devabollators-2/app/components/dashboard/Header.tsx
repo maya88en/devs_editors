@@ -1,15 +1,15 @@
-import { signInAnonymouslyAndRedirect } from "@/app/lib/initSupabase";
+// import { signInAnonymouslyAndRedirect } from "@/app/lib/initSupabase";
 import React from "react";
 
 
-signInAnonymouslyAndRedirect();
+// signInAnonymouslyAndRedirect();
 type Props = { session: any; setShowCreateRoomModal: Function };
 
 const Header = (props: Props) => {
   const { session, setShowCreateRoomModal } = props;
   return (
     <><section>
-      <h1 className='text-slate font-semibold text-blue-400'>
+      <h1 className='text-slate-600 font-semibold text-blue-400'>
           Who are Devabollators ?
       </h1>
       <br></br>
@@ -21,7 +21,7 @@ const Header = (props: Props) => {
 
       </p>
       <br></br>
-      <h1 className='text-slate font-semibold text-blue-400'>
+      <h1 className='text-slate-600 font-semibold text-blue-400'>
       Build a Rails Project as A TEAM
       </h1>
       <br></br>

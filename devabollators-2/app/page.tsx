@@ -7,13 +7,13 @@ import { supabase } from "./lib/initSupabase";
 import DashboardBody from "./components/dashboard/DashboardBody";
 // import DashboardBody from "@/app/components/dashboard/DashboardBody"
 // import SampleComponent from "./components/drawing-room/SampleComponent";
-import {signInAnonymouslyAndRedirect} from "../app/lib/initSupabase"
+// import {signInAnonymouslyAndRedirect} from "../app/lib/initSupabase"
 
  
 export default function Home() {
     // Call this function when your application starts or when the user navigates to the login page
     const [session, setSession] = useState<any>();
-    signInAnonymouslyAndRedirect();
+    // signInAnonymouslyAndRedirect();
 
 // export default function Home() {
 //   const [session, setSession] = useState<any>();
@@ -29,7 +29,7 @@ function generateUserColor() {
       "#6366f1",
     ];
     const index = Math.floor(Math.random() * colors.length);
-    signInAnonymouslyAndRedirect();
+    // signInAnonymouslyAndRedirect();
     return colors[index];
   }
 
@@ -43,7 +43,7 @@ function generateUserColor() {
   }
 
   useEffect(() => {
-    signInAnonymouslyAndRedirect();
+    // signInAnonymouslyAndRedirect();
     getUserSession()
       .then((session) => {
         if (session) {
@@ -53,7 +53,7 @@ function generateUserColor() {
             !session?.user?.user_metadata?.userColor;
 
           if (isNewUser) {
-            signInAnonymouslyAndRedirect();
+            // signInAnonymouslyAndRedirect();
             const userName = createUsernameFromEmail(
               session?.user?.email as string
             );
@@ -85,9 +85,9 @@ function generateUserColor() {
         throw new Error("Error occurred while fetching user session: " + error);
       });
   }, []);
-  signInAnonymouslyAndRedirect();
+  // signInAnonymouslyAndRedirect();
   if (isAuthenticating) {
-    signInAnonymouslyAndRedirect();
+    // signInAnonymouslyAndRedirect();
     return (
       <div className='min-h-screen flex justify-center items-center'>
         <p>Validating session. please wait...</p>

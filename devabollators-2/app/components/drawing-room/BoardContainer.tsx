@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import DrawingMenu from "./DrawingMenu";
 import WhiteBoard from "./WhiteBoard";
-import { signInAnonymouslyAndRedirect } from "@/app/lib/initSupabase";
+// import { signInAnonymouslyAndRedirect } from "@/app/lib/initSupabase";
 // import Supa from "@/app/components/drawing-room/Supa"
 // import SampleComponent from "./SampleComponent";
 // import Editor from "@/app/components/drawing-room/Editor"
@@ -9,7 +9,7 @@ import { signInAnonymouslyAndRedirect } from "@/app/lib/initSupabase";
 
 // import Test from "./Test";
 
-signInAnonymouslyAndRedirect();
+// signInAnonymouslyAndRedirect();
 
 interface BoardContainerProps {
   room: any;
