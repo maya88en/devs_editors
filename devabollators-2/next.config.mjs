@@ -1,6 +1,6 @@
 // next.config.js
 const nextConfig = {
-    output: 'export',
+    
     webpack: (config, { isServer }) => {
       // Only attempt to resolve fs module on the server side
       if (!isServer) {
