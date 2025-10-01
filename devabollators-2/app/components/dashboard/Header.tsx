@@ -13,7 +13,7 @@ const Header = (props: Props) => {
           Who are Devabollators ?
       </h1>
       <br></br>
-      <p className='text-slate-600 font-semibold text-blue-400'>
+      <p className=' font-semibold text-blue-400'>
       Devabollatros are Developers as Collaborators. 
         <b>How ?</b>
       Developers choose a room and then collaborate on building a project using <b>easy steps</b>. 
@@ -25,7 +25,7 @@ const Header = (props: Props) => {
       Build a Rails Project as A TEAM
       </h1>
       <br></br>
-      <p className='text-slate-600 font-semibold text-blue-400'>
+      <p className=' font-semibold text-blue-400'>
       {/* Study plan: Create one Room for "Props", create a 2nd Room for "Hooks", etc  */}
       <b>What are the Steps ?</b>
       </p>
@@ -36,7 +36,7 @@ const Header = (props: Props) => {
       <br></br>
       
       
-      <ol className='list-decimal list-inside text-slate-600 font-semibold text-blue-400'>
+      <ol className='list-decimal list-inside font-semibold text-blue-400'>
         <li>Open <b>Rails Room</b>.</li>
         <li>Find <b>Devabollators</b>.</li>
         <li>Open the <b>Replit</b> link in the room & <b>sign in</b> to your Replit account.</li>
@@ -50,7 +50,7 @@ const Header = (props: Props) => {
     </section>
 
     <section className='w-full flex justify-between items-center'>
-        <h3 className='text-slate-600 font-semibold text-blue-400'>
+        <h3 className=' font-semibold text-blue-400'>
           Welcome back, @{session?.user?.user_metadata?.userName} 👋🏽
         </h3>
         <button
