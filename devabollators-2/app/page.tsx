@@ -78,7 +78,7 @@ function generateUserColor() {
           setSession(session);
           setIsAuthenticating(false);
         } else {
-          window.location.href = "https://devs-editors-qpcc.vercel.app/";
+          window.location.href = "/login";
         }
       })
       .catch((error) => {
