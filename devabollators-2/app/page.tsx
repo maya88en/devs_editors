@@ -9,6 +9,7 @@ import DashboardBody from "./components/dashboard/DashboardBody";
 // import SampleComponent from "./components/drawing-room/SampleComponent";
 // import {signInAnonymouslyAndRedirect} from "../app/lib/initSupabase"
 import Script from 'next/script';
+import AdComponent from "./components/Adsense";
  
 export default function Home() {
     // Call this function when your application starts or when the user navigates to the login page
@@ -109,6 +110,7 @@ console.log(session); // currently logged in user object
           crossOrigin="anonymous"
           strategy="lazyOnload" // Or "afterInteractive" for earlier loading
         />
+        <AdComponent adSlot="4631542081" />
     </main>
   );
 }
