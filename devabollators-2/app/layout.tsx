@@ -16,19 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7446299963890807" crossOrigin="anonymous"></script>
-        
-        <ins className="adsbygoogle"
-            style={{ display: 'block' }}
-            data-ad-client="ca-pub-7446299963890807"
-            data-ad-slot="4631542081"
-            data-ad-format="auto"
-            data-full-width-responsive="true"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
