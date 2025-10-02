@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Head from 'next/head'; // For App Router
-
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,17 +15,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <><>
-      <Head>
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7446299963890807" // Replace with your publisher ID
-          crossOrigin="anonymous"
-        ></script>
-      </Head>
-      
-    </><html lang="en">
-        <body className={inter.className}>{children}</body>
-      </html></>
+    <html lang="en">
+      <body className={inter.className}>{children}
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7446299963890807" crossOrigin="anonymous"></script>
+        
+        <ins className="adsbygoogle"
+            style={{ display: 'block' }}
+            data-ad-client="ca-pub-7446299963890807"
+            data-ad-slot="4631542081"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </body>
+    </html>
   );
 }

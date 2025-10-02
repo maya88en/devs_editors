@@ -1,6 +1,6 @@
 // import { signInAnonymouslyAndRedirect } from "@/app/lib/initSupabase";
 import React from "react";
-import AdSenseAd from '@/app/components/AdSenseAd';
+// import AdSenseAd from '@/app/components/AdSenseAd';
 
 
 // signInAnonymouslyAndRedirect();
@@ -21,7 +21,7 @@ const Header = (props: Props) => {
       {/* <p>After that, they earn a <b>Team Resume</b>.</p>  */}
 
       </p>
-      <p> <AdSenseAd adSlot="4631542081" /></p>
+      {/* <p> <AdSenseAd adSlot="4631542081" /></p> */}
       <br></br>
       <h1 className='text-slate-600 font-semibol'>
       Build a Rails Project as A TEAM
