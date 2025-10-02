@@ -1,5 +1,6 @@
 // import { signInAnonymouslyAndRedirect } from "@/app/lib/initSupabase";
 import React from "react";
+import AdSenseAd from '@/app/components/AdSenseAd';
 
 
 // signInAnonymouslyAndRedirect();
@@ -9,7 +10,7 @@ const Header = (props: Props) => {
   const { session, setShowCreateRoomModal } = props;
   return (
     <><section>
-      <h1 className='text-slate-600 font-semibold text-blue-400'>
+      <h1 className='text-slate-600 font-semibold'>
           Who are Devabollators ?
       </h1>
       <br></br>
@@ -20,17 +21,18 @@ const Header = (props: Props) => {
       {/* <p>After that, they earn a <b>Team Resume</b>.</p>  */}
 
       </p>
+      <p> <AdSenseAd adSlot="4631542081" /></p>
       <br></br>
-      <h1 className='text-slate-600 font-semibold text-blue-400'>
+      <h1 className='text-slate-600 font-semibol'>
       Build a Rails Project as A TEAM
       </h1>
       <br></br>
-      <p className=' font-semibold text-blue-400'>
+      <p className=' font-semibold text-slate-600'>
       {/* Study plan: Create one Room for "Props", create a 2nd Room for "Hooks", etc  */}
       <b>What are the Steps ?</b>
       </p>
 
-      <h1 className='text-slate font-semibold text-blue-400'>
+      <h1 className='text-slate-600 font-semibold'>
       STEPS
       </h1>
       <br></br>
