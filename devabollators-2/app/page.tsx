@@ -8,7 +8,7 @@ import DashboardBody from "./components/dashboard/DashboardBody";
 // import DashboardBody from "@/app/components/dashboard/DashboardBody"
 // import SampleComponent from "./components/drawing-room/SampleComponent";
 // import {signInAnonymouslyAndRedirect} from "../app/lib/initSupabase"
-
+import Script from 'next/script';
  
 export default function Home() {
     // Call this function when your application starts or when the user navigates to the login page
@@ -103,6 +103,12 @@ console.log(session); // currently logged in user object
       <Navbar session={session} />
       <DashboardBody session={session} />
       {/* <SampleComponent session={session} /> */}
+       <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7446299963890807"
+          crossOrigin="anonymous"
+          strategy="lazyOnload" // Or "afterInteractive" for earlier loading
+        />
     </main>
   );
 }
