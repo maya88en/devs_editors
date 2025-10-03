@@ -104,6 +104,7 @@ console.log(session); // currently logged in user object
       <Navbar session={session} />
       <DashboardBody session={session} />
       {/* <SampleComponent session={session} /> */}
+      <div className="flex min-h-screen flex-col items-center justify-between p-24 mt-7">
        <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7446299963890807"
@@ -111,6 +112,7 @@ console.log(session); // currently logged in user object
           strategy="lazyOnload" // Or "afterInteractive" for earlier loading
         />
         <AdComponent adSlot="4631542081" />
+      </div>
     </main>
   );
 }
