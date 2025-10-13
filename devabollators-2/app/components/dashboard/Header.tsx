@@ -4,6 +4,7 @@ import React from "react";
 import AdComponent from "@/app/components/Adsense";
 
 
+
 // signInAnonymouslyAndRedirect();
 type Props = { session: any; setShowCreateRoomModal: Function };
 
@@ -25,7 +26,7 @@ const Header = (props: Props) => {
       <p> <AdComponent adSlot="4631542081" /></p>
       <br></br>
       <h1 className='text-slate-600 font-semibol'>
-      Build a Rails Project as A TEAM
+      Build a React.js Project as A TEAM
       </h1>
       <br></br>
       <p className=' font-semibold text-slate-600'>
@@ -40,7 +41,7 @@ const Header = (props: Props) => {
       
       
       <ol className='list-decimal list-inside font-semibold text-blue-400'>
-        <li>Open <b>Rails Room</b>.</li>
+        <li>Add a new <b>React.js Room</b>.</li>
         <li>Find <b>Devabollators</b>.</li>
         <li>Open the <b>Replit</b> link in the room & <b>sign in</b> to your Replit account.</li>
         <li>Create a new project by clicking <b>" + Create App"</b>, and choose 'Rails' or 'React' whatever you want to start your first project with.</li>

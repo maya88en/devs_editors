@@ -7,6 +7,7 @@ import NewRoomModal from "./NewRoomModal";
 import { fetchUserDrawingRooms } from "@/app/services/drawing-room.service";
 import Header from "./Header";
 import Footer from "./Footer";
+import Appointment from "./Appointment";
 
 // import {signInAnonymouslyAndRedirect} from "@/app/lib/initSupabase"
 
@@ -105,8 +106,15 @@ const DashboardBody = (props: Props) => {
         loadUserDrawingRooms={loadUserDrawingRooms}
         session={session}
       />
-      
+
       <div className='max-w-5xl flex flex-col gap-10 mx-auto px-4 pt-10'>
+      {isDashboard && (
+        <Appointment />
+       
+      )}
+      </div>
+      
+      <div className='max-w-5xl flex flex-col gap-10 mx-auto px-4 pt-10 mb-7'>
       {isDashboard && (
         <Footer
           session={session}
@@ -115,6 +123,7 @@ const DashboardBody = (props: Props) => {
        
       )}
       </div>
+
     </div>
   );
 };

@@ -11,7 +11,7 @@ const Footer = (props: Props) => {
     <><section className='flex bg-black border border-slate-500 w-full p-4'>
       <h1 className='font-semibold text-blue-400 mt-6' style={{ fontSize: '12px' }}>
           {/* Contact Us: dev0@devabollators.online  */}
-          Ask for <b style={{ color: 'red' }}>Mentor assist</b> by sending an email to: <u>learn.quickly.coding@gmail.com</u>
+          Ask for <b style={{ color: 'red' }}>Free Mentor assist</b> by sending an email to: <u>learn.quickly.coding@gmail.com</u>
       </h1>
       
       
