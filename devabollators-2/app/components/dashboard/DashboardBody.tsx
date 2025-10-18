@@ -109,8 +109,9 @@ const DashboardBody = (props: Props) => {
 
       <div className='max-w-5xl flex flex-col gap-10 mx-auto px-4 pt-10'>
       {isDashboard && (
-        <Appointment />
-       
+        <Appointment 
+        />
+        
       )}
       </div>
       
