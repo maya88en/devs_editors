@@ -43,9 +43,9 @@ useEffect(() => {
 	return (
 		
 		<div>
-			<h1 className="text-xl mb-4 text-white">Insert your email and available time </h1>
-			<h2 className="text-xl mb-4 text-white">You will be matched with a devabollator</h2>
-			<h3 className="text-xl mb-4 text-white">The Task will take about 3 mins</h3>
+			<h2 className="text-xl mb-4 text-yellow-300">Insert your email and available time </h2>
+			<h2 className="text-xl mb-4 text-yellow-300">You will be matched with a devabollator</h2>
+			<h2 className="text-xl mb-4 text-yellow-300">The Task will take about 3 mins</h2>
 			<AppointmentForm addAppointment={addAppointment} />
 			<AppointmentList
 				appointments={appointments}

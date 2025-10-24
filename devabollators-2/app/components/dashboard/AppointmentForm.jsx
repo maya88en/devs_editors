@@ -18,7 +18,7 @@ const AppointmentForm = ({ addAppointment }) => {
 			<form onSubmit={handleSubmit}>
 				<div class="row">
 					<div class="col-25">
-						<label for="fname">Email</label>
+						<label for="fname" className= "text-4xl text-indigo-800">Email</label>
 					</div>
 					<div class="col-75">
 						<input
@@ -28,21 +28,23 @@ const AppointmentForm = ({ addAppointment }) => {
 							placeholder="Your email..."
 							value={name}
 							onChange={(e) => setName(e.target.value)}
+							className="mt-3"
 						/>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-25">
-						<label for="fname">Available Time </label>
+						<label for="fname" className= "text-4xl text-indigo-800">Your available Time </label>
 					</div>
 					<div class="col-75">
 						<input
 							id="fname"
 							name="firstname"
 							placeholder="Your name.."
-							type="date"
+							type="datetime-local"
 							value={date}
 							onChange={(e) => setDate(e.target.value)}
+							className="mt-12 ml-5"
 						/>
 					</div>
 				</div>

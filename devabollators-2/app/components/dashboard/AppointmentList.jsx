@@ -31,7 +31,7 @@ const AppointmentList = ({
 
 	return (
 		<div>
-			<h1>Appointment List</h1>
+			<h1 className="text-blue-500 mb-5 mt-5 text-3xl bg-black">Devabollators Available Times</h1>
 			<table id="list">
 				<thead>
 					<tr>
@@ -96,6 +96,7 @@ const AppointmentList = ({
 											onClick={() =>
 												deleteAppointment(index)
 											}
+											disabled
 										>
 											Delete
 										</button>
@@ -106,7 +107,7 @@ const AppointmentList = ({
 					))}
 				</tbody>
 			</table>
-			<button onClick={clearAppointments}>Clear All Appointments</button>
+			<button onClick={clearAppointments} disabled>Clear All Dates (for Admin only)</button>
 		</div>
 	);
 };
