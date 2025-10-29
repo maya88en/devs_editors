@@ -27,7 +27,7 @@ const Navbar = (props: Props) => {
             href='/'
             className='text-lg font-semibold md:text-2xl text-blue-500'
           >
-            Devabollators-2
+            Devabollators
           </a>
           
           
