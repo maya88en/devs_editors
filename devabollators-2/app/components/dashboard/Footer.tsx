@@ -9,7 +9,7 @@ const Footer = (props: Props) => {
   const { session, setShowCreateRoomModal } = props;
   return (
     <><section className='flex bg-black border border-slate-500 w-full p-4'>
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-3 md:grid-cols-3 gap-4">
       <div style={{ fontSize: '12px'}}>
           <h1 className='font-semibold text-blue-400'>
               {/* Contact Us: dev0@devabollators.online  */}
