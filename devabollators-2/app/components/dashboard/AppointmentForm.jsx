@@ -15,7 +15,7 @@ const AppointmentForm = ({ addAppointment }) => {
 
 	return (
 		<div>
-			<form onSubmit={handleSubmit}>
+			<form onSubmit={handleSubmit} className="container">
 				<div class="row">
 					<div class="col-25">
 						<label for="fname" className= "text-4xl text-indigo-800">Email</label>
@@ -48,7 +48,7 @@ const AppointmentForm = ({ addAppointment }) => {
 						/>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row mt-10">
 					<input type="submit" value="Add Appointment" />
 				</div>
 			</form>
