@@ -15,10 +15,10 @@ const AppointmentForm = ({ addAppointment }) => {
 
 	return (
 		<div>
-			<form onSubmit={handleSubmit} className="container">
+			<form onSubmit={handleSubmit} className="container relative">
 				<div class="row">
 					<div class="col-25">
-						<label for="fname" className= "text-4xl text-indigo-800">Email</label>
+						<label for="fname" style={{ fontWeight: 'bold' }} className= " text-indigo-800">Email</label>
 					</div>
 					<div class="col-75">
 						<input
@@ -28,15 +28,15 @@ const AppointmentForm = ({ addAppointment }) => {
 							placeholder="Your email..."
 							value={name}
 							onChange={(e) => setName(e.target.value)}
-							className="mt-3"
+							className="mt-3 mb-3"
 						/>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-25">
-						<label for="fname" className= "text-4xl text-indigo-800">Your available Time </label>
+					<div class="col-25 ">
+						<label for="fname" style={{ fontWeight: 'bold' }} className= " text- text-indigo-800">Available Time </label>
 					</div>
-					<div class="col-75">
+					<div class="col-25">
 						<input
 							id="fname"
 							name="firstname"
@@ -44,11 +44,11 @@ const AppointmentForm = ({ addAppointment }) => {
 							type="datetime-local"
 							value={date}
 							onChange={(e) => setDate(e.target.value)}
-							className="mt-12 ml-5"
+							className="mt-2 ml-1 mr-40"
 						/>
 					</div>
 				</div>
-				<div class="row mt-10">
+				<div class="absolute right-1 bottom-1">
 					<input type="submit" value="Add Appointment" />
 				</div>
 			</form>

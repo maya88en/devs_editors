@@ -10,12 +10,12 @@ const Footer = (props: Props) => {
   return (
     <><section className=' bg-black border border-slate-500 w-full p-4'>
       <div className="grid grid-cols-3 gap-4 container">
-      <div style={{ fontSize: '12px'}}>
+      <div style={{ fontSize: '12px', textAlign: 'center'}}>
           <h1 className='font-semibold text-blue-400'>
               {/* Contact Us: dev0@devabollators.online  */}
               Ask for <b style={{ color: 'red'}}>Free Mentor assist</b> by adding a note to: 
           </h1>
-          <a className="text-green-400 ml-7" href="https://sharetext.vercel.app/?unique=21079" target="_blank"><u>sharetext</u></a>
+          <a className="text-green-400 ml-7" href="https://sharetext.vercel.app/?unique=21079" target="_blank" ><u>sharetext</u></a>
           <p className="text-green-400 ml-7" >password &nbsp;1234</p>
           
       </div>
