@@ -9,14 +9,16 @@ import BoardContainer from "@/app/components/drawing-room/BoardContainer";
 // import SampleComponent from "../../components/drawing-room/SampleComponent";
 // import BoardContainer2 from "@/app/components/drawing-room2/BoardContainer2";
 // import { RoomType } from "@/app/components/dashboard/DashboardBody";
-import Editor from "@/app/components/drawing-room/Editor"
+// import Editor from "@/app/components/drawing-room/Editor"
 // import Link from "next/link";
 // import App from "@/app/App";
 // import Dash from "@/app/components/drawing-room/Dash"
 // import reactRoom from "@/app/components/drawing-room/Learn"
-import Learn from "@/app/components/drawing-room/Learn";
-import Footer2 from "@/app/components/drawing-room/Footer2";
+// import Learn from "@/app/components/drawing-room/Learn";
 // import { signInAnonymouslyAndRedirect } from "@/app/lib/initSupabase";
+  import ProtectedContent from "@/app/components/drawing-room/ProtectedContent"
+  import ProtectedContent2 from "@/app/components/drawing-room/ProtectedContent2"
+  import Footer2 from "@/app/components/drawing-room/Footer2";
 
 
 
@@ -96,8 +98,12 @@ const DrawingRoomPage = () => {
            {/* <Dash id={"0b59fd60-273d-489e-b944-cb4226b23953"} /> */}
           
           <div className='grid grid-cols-2 gap-4 '>
-              <div ><Editor /></div>
-              <div><Learn /></div>
+            <div>
+              <ProtectedContent />
+            </div>
+            <div>
+              <ProtectedContent2 />
+            </div>
           </div> 
           <div><Footer2 /></div>
         </div>

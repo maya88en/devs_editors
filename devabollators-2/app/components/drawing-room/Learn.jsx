@@ -4,14 +4,29 @@ const Learn = () => {
   useEffect(() => {
     window.onload=function(){
         }});
-
+  // function checkPassword() {
+  //     const correctPassword = "123456"; // Replace with your actual password
+  //     const enteredPassword = document.getElementById("passwordInput").value;
+          
+  //     if (enteredPassword === correctPassword) {
+  //       document.getElementById("protectedContent").style.display = "block";
+  //       alert("Password Correct! Content unlocked.");
+  //     } else {
+  //       alert("Incorrect Password. Please try again.");
+  //     }
+  //   }
 
 
   return (
+    
     <>
     <div>
-    <br></br>
-    <br></br>
+    {/* <h1>Enter Password to View Content</h1><input type="password" id="passwordInput" placeholder="Enter password"></input><button onclick="checkPassword()">Submit</button>
+
+  <div id="protectedContent">
+    <h2>This is the secret content!</h2>
+    <p>Only visible after entering the correct password.</p> */}
+
     <h1 class="text-red-500"><b>React Project Steps</b></h1>
     <ol class="list-decimal list-inside">
     <br></br>
@@ -248,8 +263,8 @@ const Learn = () => {
 
       
       </ol>
-    
     </div>
+    {/* </div> */}
 
 </>
   );
