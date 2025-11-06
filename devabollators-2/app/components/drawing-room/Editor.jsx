@@ -55,13 +55,11 @@ const Editor = () => {
 
 
     <div>
-    <br></br>
-    <br></br>
-    <h1 class="text-red-500"><b>Rails Project Steps</b></h1>
-    <br></br>
+    <h1 class="text-red-500 mb-3 mt-3"><b>Rails Project Steps</b></h1>
+    
     <ol class="list-decimal list-inside">
       
-      <ol class="list-decimal list-inside bg-slate-200/[71.37%] text-stone-100 text-sm ">This step is in your VSCode, it is already done for you on Replit. <br></br>
+      <ol class="list-decimal list-inside bg-slate-200/[71.37%] text-stone-100 text-sm ">This step is in your VSCode, it is already done for you on Replit.
         <li>Install Ruby then type in terminal: ruby -v</li>
         <li>gem install rails, see this link  <a class ="text-blue-500"href="https://gorails.com/setup/"> Rails Stetup</a></li>
       </ol>
@@ -77,12 +75,10 @@ const Editor = () => {
        <li>rails new my-app, then:  cd my-app </li>
       <p class="text-sm"> To open VSCode in Linux, type <b>'code .'</b> , then: bundle install</p>
       <li> rails s</li>
-      <br></br>
       {/* <div><b>Big Steps</b></div> */}
       {/* <li> In routes: get “about”, to: “about#index” </li> */}
       {/* <li> 
         <div class="relative">In Controllers: create new file "about_controller.rb"
-      <br></br>
       <pre>class AboutController &lt;ApplicationController</pre>
       <pre>#define method index</pre>
       <pre>&nbsp;def index</pre> 
@@ -101,11 +97,11 @@ const Editor = () => {
       
       
       </div>
-      //text-slate-600 font-semibold text-blue-400//
-      <div class="bg-zinc-400 text-blue-200">
+      {/* text-slate-600 font-semibold text-blue-400 */}
+      <div class="bg-zinc-400 text-blue-200 mt-5">
       <table>
-                <tr><th><b class="text-3xl">Routes, Controllers & Views</b></th></tr>
-                <br></br>
+                <tr><th><b class="text-3xl mb-3">Routes, Controllers & Views</b></th></tr>
+                
                 <tr class="hello">
                 <th >
                 <td class="float-left text-2xl text-blue-300 bg-gray-100">&nbsp; &nbsp; BabyBlue Steps &nbsp; &nbsp;</td>
@@ -114,7 +110,6 @@ const Editor = () => {
       {/* # Get the / to the main controller */}
       {/* <b>get “/”, to: “main/index”</b> */}
       </li>
-      <br></br>
       <li style={{ textAlign: 'left' }}>In <b class="text-1xl text-blue-300">Controllers</b> folder, add a new file <b> 'main_controller.rb'</b>, with this code:
       <div class="bg-gray-100 text-blue-300">
       <p>&nbsp; class MainController &lt; ApplicationController
@@ -123,10 +118,8 @@ const Editor = () => {
       <p>&nbsp; end</p></p>
       </div>
       </li>
-      <br></br>
-      <br></br>
       <li>In <b class="text-1xl text-blue-300">Views</b> folder, add a folder “main” with a file 'index.html.erb' with this line: 
-      <br></br>
+      
       <p>&lt;h1 &gt; Welcome to the homepage &lt;/h1&gt;</p>
       <p >Run on Replit to see the homepage: </p>
       <div class="zoom">
@@ -168,14 +161,45 @@ const Editor = () => {
                 </table>
       </div>
 
-      <div class="bg-red-50 text-pink-300 text-1xl">
+      <div class="bg-zinc-400 text-blue-200 mt-5">
+      <table>
+                <tr><th><b class="text-3xl mb-3">Bootstrap</b></th></tr>
+                
+                <tr class="hello">
+                <th >
+                <td class="float-left text-2xl text-purple-200 bg-gray-400">&nbsp; &nbsp; Pinky Steps&nbsp; &nbsp;</td>
+                <li class="bg-gray-400">Go to <a class="text-pink-500" href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank">getbootstrap.com</a> and copy the CSS & JS links.</li>
+      <li className="mt-3" style={{ textAlign: 'left' }}>
+            
+          Go to the 'layouts' folder, 'application.html.erb' file and paste the CSS and JS links: </li>
+          
+                <li className='mt-3'>Refresh the browser's homepage to see the new style.
+                <p>Then go to the 'views' folder, open 'main' file, then open 'index.html.erb' file. </p>
+                <p>Add this class to the div: “d-flex align-items-center justify-content-center”</p> 
+                <p>Refresh again, the text is centered.</p>
+          
+                </li>
+                <li className="mt-3 mb-3">Go again to the 'layouts', open 'application.html.erb' file, and write this code: 
+                
+                  <p > &lt;div class&#61;"container"&gt; &lt;&#37;&#61; yield &#37;&gt; &lt;/div&gt;</p> 
+                
+                  <p>This will wrap all contents in 'views' in this container</p> 
+                </li> 
+                  
+                </th>
+                </tr>
+                </table>
+      </div>
+
+      {/* <div class="bg-red-50 text-pink-300">
       <div>
               <table>
                 <tr><th> <b class="text-3xl">Bootstrap</b></th></tr>
                 <tr class="hello">
                 <th >
+                <td class="float-left text-2xl text-purple-200 bg-gray-400">&nbsp; &nbsp;&nbsp;Pinky Steps&nbsp; &nbsp; &nbsp;</td>
+                <li class="bg-gray-400">Go to <a class="text-pink-500" href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank">getbootstrap.com</a> and copy the CSS & JS links.
                 
-                <li class="bg-gray-400">Go to <a class="text-pink-500 "href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank">getbootstrap.com</a>, and copy the CSS & JS links.</li>
           <div class="text-sm">
             
           <p>Go to the 'layouts' folder, 'application.html.erb' file and paste the CSS and JS links: </p> 
@@ -183,12 +207,13 @@ const Editor = () => {
           <p class ="text-pink-300 bg-gray-400 mt-2 mb-2">&lt;link href= "https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous"&gt;</p>
           <p class ="text-pink-300 bg-gray-400 mb-4">&lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"&gt;</p>
           </small>
-          <td class="float-left text-2xl text-purple-200 bg-gray-400">&nbsp; &nbsp;&nbsp;Pinky Steps&nbsp; &nbsp; &nbsp;</td>
-          <br></br>
+          
+          
+          
           <p>Refresh the browser's homepage to see the new style.</p>
           <p>Then go to the 'views' folder, open 'main' file, then open 'index.html.erb' file. </p>
           <p>Add this class to the div: “d-flex align-items-center justify-content-center”</p> 
-          <p>Refresh again, the text is centered.</p>
+          <p>Refresh again, the text is centered.</p> */}
           
                 
           {/* <div class="bg-yellow-400">
@@ -197,35 +222,37 @@ const Editor = () => {
                 <tr class="hello">
                 <th >
                 <td class="float-left text-5xl text-yellow-500 bg-gray-700">Yellow steps</td> */}
-                <p class="mb-2 mt-2">Go again to the 'layouts', open 'application.html.erb' file, and write this code: </p>
+                {/* <p class="mb-2 mt-2">Go again to the 'layouts', open 'application.html.erb' file, and write this code: </p>
                 
                   <p class="mb-2 mt-2"> &lt;div class&#61;"container"&gt; &lt;&#37;&#61; yield &#37;&gt; &lt;/div&gt;</p> 
                 
                   <p class="mb-9">This will wrap all contents in 'views' in this container</p> 
                   
                   </div>
+                  </li>
+                  
                   </th>
                 </tr>
                 </table>
           </div>
-          </div>
+          </div> */}
                 {/* </th>
                 </tr>
                 </table>
             
             
                   </div> */}
-          <div class="bg-slate-500 text-blue-200">
+          <div className="bg-slate-500 text-blue-200 ">
             <div>
               <table>
-                <tr><th><b class="text-3xl">Render Navbar in 'application.html.erb'</b></th></tr>
-                <tr class="hello">
-                <th >
-                <td class="float-left text-2xl bg-gray-100 text-slate-500">&nbsp; &nbsp; &nbsp;Navy Steps &nbsp; &nbsp;</td>
-                  <li><b class="text-1xl text-blue-300">Go to getbootstrap.com </b> select: 'Components', and then select 'Navbar'.</li>
+                <tr><th><b className="text-3xl">Render Navbar in 'application.html.erb'</b></th></tr>
+                <tr className="hello">
+                <th>
+                <td className="float-left text-2xl bg-gray-100 text-slate-500">Navy Steps &nbsp; &nbsp;</td>
+                  <li><b className="text-1xl text-blue-300">Go to getbootstrap.com </b> select: 'Components', and then select 'Navbar'.
                   <p>Then choose a navbar</p>
                   <p>Instead of directly pasting this navbar in the 'application.html.erb', we can just render another 'view' inside the 'layout':</p>
-                 <p class="bg-gray-100 text-blue-300"> &lt;&#37;&#61; render partial: “shared/navbar” &#37;&gt;</p>
+                 <p className="bg-gray-100 text-blue-300"> &lt;&#37;&#61; render partial: “shared/navbar” &#37;&gt;</p>
                   <p>It is called partial because it is not a full template, we are going to render a portion of the page.</p>
                   <p class="bg-gray-100 text-blue-300">So, go to 'views' folder, create a new folder called 'shared', create a new file called '_navbar.html.erb'</p>
                   <p>This means inside of shared; it will look for the _navbar.html.erb</p>
@@ -233,6 +260,7 @@ const Editor = () => {
                   <p class="bg-gray-100 text-blue-300">Paste in this file the navbar from bootstrap</p>
                   <p>It is not yet functional, <b class="bg-gray-100 text-blue-300">change the href= '#' to '/homepage' for the Homepage, and the href='#' to '/about' for the About page</b></p>
                   <p class="text-sm">Refresh again and go to the 'About' and 'Homepage'</p>
+                  </li>
                   </th>
                 
                 </tr>

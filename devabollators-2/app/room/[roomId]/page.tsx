@@ -97,7 +97,7 @@ const DrawingRoomPage = () => {
             {/* <SampleComponent/>; */}  
            {/* <Dash id={"0b59fd60-273d-489e-b944-cb4226b23953"} /> */}
           
-          <div className='grid grid-cols-2 gap-4 '>
+          <div className='grid md:grid-cols-2 gap-4 '>
             <div>
               <ProtectedContent />
             </div>

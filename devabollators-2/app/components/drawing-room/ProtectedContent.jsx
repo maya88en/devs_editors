@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Editor from './Editor';
-import Learn from './Learn';
 
 function ProtectedContent() {
   const [passcode, setPasscode] = useState('');
@@ -24,25 +23,26 @@ function ProtectedContent() {
   return (
     <div>
       {!isAuthenticated ? (
-        <form onSubmit={handleSubmit}>
-          <label htmlFor="passcode-input">Enter Passcode:</label>
+        <form onSubmit={handleSubmit} className="flex flex-col space-y-4 p-4 max-w-xs mx-auto">
+          <label htmlFor="passcode-input" className="text-sm font-medium text-gray-700 md:text-base">Enter Passcode:</label>
           <input
             type="password"
             id="passcode-input"
             value={passcode}
             onChange={handlePasscodeChange}
+            className="border border-gray-300 p-2 rounded-md focus:ring-blue-500 focus:border-blue-500 w-30% mr-5"
           />
-          <button type="submit">Unlock</button>
+          <button type="submit" className="bg-blue-900 text-white p-2 rounded-md hover:bg-blue-100 text-sm md:text-base">Unlock</button>
         </form>
       ) : (
-        <div>
-          <h2>Welcome! Here's your secret content:</h2>
+        <div className='text-slate-500 text-center'>
+          <h2 className='text-slate-500'>Welcome! Here's your secret content:</h2>
           <p>This is the content that is hidden by the passcode.</p>
           {/* <ul> */}
             {/* <li>Sensitive information 1</li> */}
             {/* <div className='w-full flex flex-col-reverse xl:flex-row'>
             <div className='grid grid-cols-2 gap-4 '> */}
-                <div><Editor /></div>
+                <div className='container'><Editor /></div>
                 
             {/* </div>
             </div> */}

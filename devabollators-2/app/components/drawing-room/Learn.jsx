@@ -27,14 +27,14 @@ const Learn = () => {
     <h2>This is the secret content!</h2>
     <p>Only visible after entering the correct password.</p> */}
 
-    <h1 class="text-red-500"><b>React Project Steps</b></h1>
+    <h1 class="text-red-500 mb-3 mt-3"><b>React Project Steps</b></h1>
     <ol class="list-decimal list-inside">
-    <br></br>
-      <ol class="list-decimal list-inside bg-pink-500/[41.37%] text-stone-100 text-sm ">This step is in your VSCode, it is already done for you on Replit. <br></br>
+    
+      <ol class="list-decimal list-inside bg-pink-500/[41.37%] text-stone-100 text-sm ">This step is in your VSCode, it is already done for you on Replit.
         <li>Install React.js</li>
         <li>See Reference</li>
       </ol>
-      <div class="bg-stone-500 text-stone-200">
+      <div class="bg-stone-500 text-stone-200 mt-8">
       <table>
                 <tr><th><b>First steps to create a react project, do not use the browny steps on Replit, they are already done for you. Only use uf you are building a project on VSCode:</b></th></tr>
                 <tr class="hello">
@@ -43,13 +43,13 @@ const Learn = () => {
         <h2>Type in terminal: </h2>
         <li>npx create-react-app .</li>
         <li>npm start</li>
-      <br></br>
+      
       </th>
             </tr>
             </table>
       </div>
-      <br></br>
-      <div class="bg-zinc-400 text-blue-200">
+      
+      <div class="bg-zinc-400 text-blue-200 mt-3">
       <table>
                 <tr><th><b class="text-3xl">In 'index.jsx'</b></th></tr>
                 
@@ -71,8 +71,6 @@ const Learn = () => {
       
       
       {/* <li style={{ textAlign: 'left' }}>In <b class="text-2xl text-orange-500 bg-gray-700">Controllers</b> folder, add a new file <b> main_controller.rb</b>, with the following code:
-      <br></br>
-      <br></br>
       <p>class MainController &lt; ApplicationController
       <p>&nbsp;def index</p>
       <p>&nbsp;end</p>
@@ -80,12 +78,12 @@ const Learn = () => {
       </li> */}
 
       {/* <li>In <b class="text-2xl text-orange-500 bg-gray-700">Views</b> folder, 
-      <br></br>
+      
       add a folder “main” and a new file “index.html.erb” with the following line: 
-      <br></br>
+     
       
       <p>&lt;h1 &gt; Welcome to the homepage &lt;/h1&gt;</p>
-      <br></br>
+      
       <p >Run on Replit to see homepage</p>
 
       <img        
@@ -97,13 +95,13 @@ const Learn = () => {
                   // style={{ borderRadius: "200%" }}
                 />
 
-      <br></br>
+      
       <h3 >Before moving to the  <b>Red Steps</b>, ask a devabollator to join you</h3>
       <p> Use the realtime feature of Replit rails</p>
       <p>How ?</p>
       <p>Click on <b>invite</b> on your Replit project page and search for a user who has an account on replit.</p>
       <p>The other devabollator accepts invite by email, or clicks on <b>Apps</b> and clicks <b>shared with me</b> on his/her Replit account.</p>
-      <br></br>
+      
 
       <video width="800" height="800" controls
         
@@ -111,14 +109,14 @@ const Learn = () => {
       
       />
       /*
-      <br></br>
+      
       <p>After finishing the <b class="text-orange-500">Orange steps</b> with a devabollator, you can share the link and password of the <b>sharetext </b>with the Mentor so that other devabollators can join you later. </p>
-      <br></br>
+      
       <p>see the example below of a sharetext</p>
-      <br></br>
+      
       <a class="text-green-400" href="https://sharetext.vercel.app/?unique=21079">sharetext</a>
       <p><b>password</b>&nbsp;1234</p>
-      <br></br> */}
+       */}
       {/* # Go to the browser, refresh the localhost:3000 and it will show the homepage
       </li>
       <li>Now, go back to the routes and change the get “/”, to: “main/index” to <b>root to: “main/index”</b> */}
@@ -133,7 +131,7 @@ const Learn = () => {
                 <th >
                 <td class="float-left text-5xl text-red-500 bg-gray-700">Red steps</td> */}
                 <li> <b class="text-1xl text-blue-300">Reuse First Component</b> 
-      <br></br>
+      
       <div class="zoom">
         <img        
                   alt="homepage"
@@ -188,7 +186,7 @@ const Learn = () => {
                 <th >
                 <td class="float-left text-5xl text-green-500 bg-gray-700">Green steps</td> */}
                 <li> <b class="text-1xl text-blue-300">Call First Component</b> 
-      <br></br>
+      
       <div class="zoom"><img        
                   alt="homepage"
                   width="500px"
