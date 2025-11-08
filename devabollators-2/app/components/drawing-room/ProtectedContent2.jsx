@@ -26,6 +26,7 @@ function ProtectedContent() {
       {!isAuthenticated ? (
         <form onSubmit={handleSubmit} className="flex flex-col space-y-4 p-4 max-w-xs mx-auto">
           <label htmlFor="passcode-input" className="text-sm font-medium text-gray-700 md:text-base">Enter Passcode:</label>
+                        
           <input
             type="password"
             id="passcode-input"
@@ -39,7 +40,12 @@ function ProtectedContent() {
         <div className='text-slate-500 text-center'>
           <h2>Welcome! Here's your secret content:</h2>
           <p>This is the content that is hidden by the passcode.</p>
-                <div className='container'><Learn /></div>
+          <div className="grid grid-cols-3 gap-3 text-slate-600 mt-3">
+                                  <div><a href="#browny" >Browny Steps</a></div>
+                                  <div><a href="#baby" >Babyblue Steps</a></div>
+                                  <div><a href="#navy" >Navy Steps</a></div>
+            </div>
+            <div className='container'><Learn /></div>
         </div>
       )}
     </div>

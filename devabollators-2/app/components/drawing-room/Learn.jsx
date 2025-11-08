@@ -34,12 +34,12 @@ const Learn = () => {
         <li>Install React.js</li>
         <li>See Reference</li>
       </ol>
-      <div class="bg-stone-500 text-stone-200 mt-8">
+      <div class="bg-stone-500 text-stone-200">
       <table>
                 <tr><th><b>First steps to create a react project, do not use the browny steps on Replit, they are already done for you. Only use uf you are building a project on VSCode:</b></th></tr>
                 <tr class="hello">
                 <th >
-                <td class="float-left text-1xl text-stone-500 bg-gray-300">&nbsp;Browny Steps</td>
+                <td id="browny" class="float-left text-1xl text-stone-500 bg-gray-300 ">&nbsp;Browny Steps</td>
         <h2>Type in terminal: </h2>
         <li>npx create-react-app .</li>
         <li>npm start</li>
@@ -55,7 +55,7 @@ const Learn = () => {
                 
                 <tr class="hello">
                 <th >
-                <td class="float-left text-2xl text-blue-300 bg-gray-100">&nbsp; &nbsp; BabyBlue Steps &nbsp; &nbsp; &nbsp;</td>
+                <td id="baby" class="float-left text-2xl text-blue-300 bg-gray-100">&nbsp; &nbsp; BabyBlue Steps &nbsp; &nbsp; &nbsp;</td>
                 <li><b class="text-1xl text-blue-300">Create First Component</b> 'Product' for now in the 'index.jsx', we will change this later.</li>
       <div class="zoom">
       <img        
@@ -219,7 +219,7 @@ const Learn = () => {
                 <tr><th><b class="text-3xl">Create a Navbar Component</b></th></tr>
                 <tr class="hello">
                 <th >
-                <td class="float-left text-2xl bg-gray-100 text-slate-500">&nbsp; &nbsp;Navy Steps &nbsp; &nbsp;</td>
+                <td id="navy" class="float-left text-2xl bg-gray-100 text-slate-500">&nbsp; &nbsp;Navy Steps &nbsp; &nbsp;</td>
                 <li> <b class="text-1xl text-blue-300">Create Second Component </b>, create a navbar component and write the code in the below image </li>
       
       <div class="zoom"><img        

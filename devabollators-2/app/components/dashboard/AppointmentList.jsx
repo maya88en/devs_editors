@@ -11,22 +11,26 @@ const AppointmentList = ({
 	const [editedIndex, setEditedIndex] = useState(null);
 	const [editedName, setEditedName] = useState("");
 	const [editedDate, setEditedDate] = useState("");
+	const [editedTask, setEditedTask] = useState("");
 
 	const handleEdit = (index) => {
 		setEditedIndex(index);
 		setEditedName(appointments[index].name);
 		setEditedDate(appointments[index].date);
+		setEditedTask(appointments[index].task);
 	};
 
 	const handleSaveEdit = (index) => {
-		editAppointment(index, editedName, editedDate);
+		editAppointment(index, editedName, editedDate, editedTask);
 		setEditedIndex(null);
 		setEditedName("");
+		setEditedTask("");
 	};
 
 	const handleCancelEdit = () => {
 		setEditedIndex(null);
 		setEditedName("");
+		setEditedTask("");
 	};
 
 	return (
@@ -36,9 +40,10 @@ const AppointmentList = ({
 				<thead>
 					<tr>
 						<th>ID</th>
-						<th>Name</th>
+						<th>Email</th>
 						<th>Date</th>
 						<th>Action</th>
+						<th>Task</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -96,11 +101,24 @@ const AppointmentList = ({
 											onClick={() =>
 												deleteAppointment(index)
 											}
-											disabled
+											
 										>
 											Delete
 										</button>
 									</>
+								)}
+							</td>
+							<td>
+								{editedIndex === index ? (
+									<input
+										type="text"
+										value={editedTask}
+										onChange={(e) =>
+											setEditedTask(e.target.value)
+										}
+									/>
+								) : (
+									appointment.task
 								)}
 							</td>
 						</tr>

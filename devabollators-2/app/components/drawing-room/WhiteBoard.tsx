@@ -256,9 +256,11 @@ function WhiteBoard(props: BoardProps) {
     <div className='my-auto w-full h-full border p-2'>
       <div className='w-full h-full relative' id='sketch' ref={boardAreaRef}>
         
+        
         <div id='container' className='w-full h-full'>
           <h3 className="text-5xl text-red-500">Devabollate on - <a href="#" target="_blank">Rails/React Steps</a></h3>
           <canvas className='w-full h-full' id='board'></canvas>
+
         </div>
       </div>
     </div>

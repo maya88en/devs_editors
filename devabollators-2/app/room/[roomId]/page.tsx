@@ -96,6 +96,7 @@ const DrawingRoomPage = () => {
           {/* <App isRails={true} id={"0b59fd60-273d-489e-b944-cb4226b23953"} /> */}
             {/* <SampleComponent/>; */}  
            {/* <Dash id={"0b59fd60-273d-489e-b944-cb4226b23953"} /> */}
+           
           
           <div className='grid md:grid-cols-2 gap-4 '>
             <div>

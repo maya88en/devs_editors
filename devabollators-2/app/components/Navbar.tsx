@@ -21,6 +21,11 @@ const Navbar = (props: Props) => {
   // signInAnonymouslyAndRedirect();
   return (
     <nav className='bg-black z-20 border border-slate-200 w-full p-4'>
+          <a
+            className='text-lg font-semibold md:text-2xl text-green-500 float-right '
+          >
+            All Free
+          </a>
       <div className='mx-auto flex justify-between items-center'>
         <section className='flex gap-2 items-center'>
           <a
@@ -29,6 +34,8 @@ const Navbar = (props: Props) => {
           >
             Devabollators
           </a>
+
+          
           
           
           {shouldShowRoomName && (
@@ -124,9 +131,9 @@ const Navbar = (props: Props) => {
               
               href='https://replit.com/@replit/Rails'
               target='_blank'
-              className='text-slate-500'
+              className='text-slate-500 mr-5'
             >
-              <span>Replit Rails</span>
+              <span>Replit</span>
               
             </a>
             

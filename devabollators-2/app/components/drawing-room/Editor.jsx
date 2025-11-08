@@ -68,7 +68,7 @@ const Editor = () => {
                 <tr><th><b>First steps to create a rails project. Do not use the browny steps on Replit, they are already done for you. Only use if you are building a project on VSCode:</b></th></tr>
                 <tr class="hello">
                 <th >
-                <td class="float-left text-1xl text-stone-500 bg-gray-300">Browny steps</td>
+                <td id="browny" class="float-left text-1xl text-stone-500 bg-gray-300">Browny steps</td>
                 
 
        <h2>Type in terminal:</h2> 
@@ -104,7 +104,7 @@ const Editor = () => {
                 
                 <tr class="hello">
                 <th >
-                <td class="float-left text-2xl text-blue-300 bg-gray-100">&nbsp; &nbsp; BabyBlue Steps &nbsp; &nbsp;</td>
+                <td id="baby" class="float-left text-2xl text-blue-300 bg-gray-100">&nbsp; &nbsp; BabyBlue Steps &nbsp; &nbsp;</td>
                 
                 <li>In <b class="text-1xl text-blue-300">Routes</b> folder, add this code: <b>root "main#index"</b>
       {/* # Get the / to the main controller */}
@@ -147,10 +147,12 @@ const Editor = () => {
       
       />
       </div>
-      <p>See the example below of a sharetext:</p>
+      <p>See this example of a sharetext: </p>
+      <div className='grid grid-cols-2 '>
       
-      <a class="text-green-400" href="https://sharetext.vercel.app/?unique=21079">sharetext</a>
-      <p class="text-green-400">password &nbsp;1234</p>
+      <div><a class="text-green-400" href="https://sharetext.vercel.app/?unique=21079">  sharetext</a></div>
+      <div class="text-green-400">password &nbsp;1234</div>
+      </div>
       
       {/* # Go to the browser, refresh the localhost:3000 and it will show the homepage
       </li>
@@ -161,17 +163,21 @@ const Editor = () => {
                 </table>
       </div>
 
-      <div class="bg-zinc-400 text-blue-200 mt-5">
+      <div class="bg-zinc-400 text-blue-200">
       <table>
                 <tr><th><b class="text-3xl mb-3">Bootstrap</b></th></tr>
                 
                 <tr class="hello">
                 <th >
-                <td class="float-left text-2xl text-purple-200 bg-gray-400">&nbsp; &nbsp; Pinky Steps&nbsp; &nbsp;</td>
+                <td id="pinky" class="float-left text-2xl text-purple-200 bg-gray-400">&nbsp; &nbsp; Pinky Steps&nbsp; &nbsp;</td>
                 <li class="bg-gray-400">Go to <a class="text-pink-500" href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank">getbootstrap.com</a> and copy the CSS & JS links.</li>
       <li className="mt-3" style={{ textAlign: 'left' }}>
             
           Go to the 'layouts' folder, 'application.html.erb' file and paste the CSS and JS links: </li>
+          <small>
+          <p class ="text-pink-300 bg-gray-400 mt-2 mb-2">&lt;link href= "https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous"&gt;</p>
+          <p class ="text-pink-300 bg-gray-400 mb-4">&lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"&gt;</p>
+          </small>
           
                 <li className='mt-3'>Refresh the browser's homepage to see the new style.
                 <p>Then go to the 'views' folder, open 'main' file, then open 'index.html.erb' file. </p>
@@ -248,7 +254,7 @@ const Editor = () => {
                 <tr><th><b className="text-3xl">Render Navbar in 'application.html.erb'</b></th></tr>
                 <tr className="hello">
                 <th>
-                <td className="float-left text-2xl bg-gray-100 text-slate-500">Navy Steps &nbsp; &nbsp;</td>
+                <td id="navy"className="float-left text-2xl bg-gray-100 text-slate-500">Navy Steps &nbsp; &nbsp;</td>
                   <li><b className="text-1xl text-blue-300">Go to getbootstrap.com </b> select: 'Components', and then select 'Navbar'.
                   <p>Then choose a navbar</p>
                   <p>Instead of directly pasting this navbar in the 'application.html.erb', we can just render another 'view' inside the 'layout':</p>
