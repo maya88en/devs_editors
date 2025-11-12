@@ -202,6 +202,8 @@ h1 {
 #list th {
 	border: 1px solid #ddd;
 	padding: 8px;
+  text-align: center;
+
 }
 
 #list tr:nth-child(even) {
@@ -215,7 +217,7 @@ h1 {
 #list th {
 	padding-top: 12px;
 	padding-bottom: 12px;
-	text-align: left;
+	text-align: center;
 	background-color: rgb(26, 26, 102);
 	color: white;
 }

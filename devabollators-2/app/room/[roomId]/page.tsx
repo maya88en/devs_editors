@@ -96,7 +96,10 @@ const DrawingRoomPage = () => {
           {/* <App isRails={true} id={"0b59fd60-273d-489e-b944-cb4226b23953"} /> */}
             {/* <SampleComponent/>; */}  
            {/* <Dash id={"0b59fd60-273d-489e-b944-cb4226b23953"} /> */}
-           
+           <h1 className="mt-5">Ask a devabollator to join you, Use the realtime feature of Replit, How ?
+           Click on 'invite' in your Replit project page and search for a user who has an account on Replit.
+           The other devabollator accepts invite by email, or clicks on 'Apps', then clicks on 'shared with me' in his/her Replit account.
+           You can share the link and password of the ShareText with the Mentor to assist you with the guided steps</h1>
           
           <div className='grid md:grid-cols-2 gap-4 '>
             <div>

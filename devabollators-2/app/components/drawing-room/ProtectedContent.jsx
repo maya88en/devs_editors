@@ -42,7 +42,7 @@ function ProtectedContent() {
             {/* <li>Sensitive information 1</li> */}
             {/* <div className='w-full flex flex-col-reverse xl:flex-row'>
             <div className='grid grid-cols-2 gap-4 '> */}
-            <div className="grid grid-cols-4 gap-3 text-slate-600 mt-3">
+            <div className="grid md:grid-cols-4 gap-3 text-slate-600 mt-3">
                                   <div><a href="#browny" >Browny Steps</a></div>
                                   <div><a href="#baby" >Babyblue Steps</a></div>
                                   <div><a href="#pinky" >Pinky Steps</a></div>

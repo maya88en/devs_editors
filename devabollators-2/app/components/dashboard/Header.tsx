@@ -12,32 +12,32 @@ const Header = (props: Props) => {
   const { session, setShowCreateRoomModal } = props;
   return (
     <><section>
-      <h1 className='text-slate-600 font-semibold'>
-          Who are Devabollators ?
+      <h1 className='text-slate-600 font-semibold mb-5 text-xl'>
+          <b>Who are Devabollators ?</b>
       </h1>
-      <br></br>
+      
       <p className=' font-semibold text-blue-400'>
       Devabollatros are Developers as Collaborators. 
-        <b>How ?</b>
-      Developers choose a room and then collaborate on building a project using <b>easy steps</b>. 
+        <b>How? </b>
+       Developers choose a room and then collaborate on building a project using <b>easy steps</b>. 
       {/* <p>After that, they earn a <b>Team Resume</b>.</p>  */}
 
       </p>
       <p> <AdComponent adSlot="4631542081" /></p>
-      <br></br>
-      <h1 className='text-slate-600 font-semibol'>
-      Build a React.js Project as A TEAM
-      </h1>
-      <br></br>
-      <p className=' font-semibold text-slate-600'>
+      
+      <p className='font-semibold text-slate-600 text-center mb-5'>
+      <b>Build a React.js Project with a coding partner</b>
+      </p>
+      
+      <p className=' font-semibold text-slate-600 mb-5'>
       {/* Study plan: Create one Room for "Props", create a 2nd Room for "Hooks", etc  */}
       <b>What are the Steps ?</b>
       </p>
 
-      <h1 className='text-slate-600 font-semibold'>
+      {/* <h1 className='text-slate-600 font-semibold'>
       STEPS
-      </h1>
-      <br></br>
+      </h1> */}
+      
       
       
       <ol className='list-decimal list-inside font-semibold text-blue-400'>

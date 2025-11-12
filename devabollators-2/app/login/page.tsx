@@ -55,7 +55,7 @@ const LoginPage = () => {
       <h2 className="mt-2"><b>Free Start your React.js journey with a team and a mentor to build a portfolio for CV to apply for high paying jobs</b></h2>
       <h2><b>Connect with other developers....</b></h2>
       <h2><b>Free build of React.js Projects</b></h2>
-      <h2 className="mt-3 text-white text-2xl font-thin">تدريب مجاني قائم على مشروع</h2>
+      <h2 className="mt-3 text-white text-2xl font-thin">تدريب مجاني قائم على بناء مشاريع</h2>
       <h1 className= " text-red-600 text-5xl mt-2 mb-2"><b>DEVABOLLATORS</b></h1>
       <div className="mt-3 mb-3 text-white text-2xl">
       
@@ -66,7 +66,7 @@ const LoginPage = () => {
         <video width="250" height="50" autoPlay loop muted
         style={{margin: "auto"}}
         src={`../room.mp4`} 
-        
+        className="grid md:grid-cols"
       />
     
       </>
@@ -86,7 +86,7 @@ const LoginPage = () => {
 
       <button
         type='submit'
-        className='px-3 py-2 bg-slate-900 text-white rounded-lg text-base w-full mb-7'
+        className='px-3 py-2 bg-slate-900 text-white rounded-lg text-base w-full mb-3'
         disabled={isTokenSent || isLoading}
       >
         {isTokenSent
@@ -95,6 +95,7 @@ const LoginPage = () => {
           ? "One moment please..."
           : "Send link, Link senden, Bağlantıyı Gönder, إرسال الرابط"}
       </button>
+      <h2 className="text-center text-red-600 font-bold mb-3">The link expires after 1 hour</h2>
       
     </form>
     

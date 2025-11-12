@@ -197,11 +197,11 @@ function WhiteBoard(props: BoardProps) {
         // ctx.textAlign = 'center';
         // ctx.textBaseline = 'middle';
         // ctx.fillText("Steps", (canvas.width / 2), (canvas.height / 2));
-        ctx.fillText("Ask a devabollator to join you, Use the realtime feature of Replit Rails, How ? ", 0, 50);
-        ctx.fillText("Click on 'invite' on your Replit project page and search for a user who has an account on Replit.", 0, 100)
+        ctx.fillText("Ask a devabollator to join you, Use the realtime feature of Replit, How ? ", 0, 50);
+        ctx.fillText("Click on 'invite' in your Replit project page and search for a user who has an account on Replit.", 0, 100)
         ctx.fillText("The other devabollator accepts invite by email, or clicks on 'Apps', then clicks on 'shared with me' in his/her Replit account.", 0, 150)
         ctx.fillStyle = "purple";
-        ctx.fillText("You can share the link and password of the ShareText with the Mentor so that other devabollators can join you.", 0, 200 )
+        ctx.fillText("You can share the link and password of the ShareText with the Mentor to assist you with the guided steps.", 0, 200 )
       };
       image.src = drawingData;
     }
@@ -263,6 +263,7 @@ function WhiteBoard(props: BoardProps) {
 
         </div>
       </div>
+      
     </div>
   );
 }

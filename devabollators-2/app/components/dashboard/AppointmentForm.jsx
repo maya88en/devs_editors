@@ -64,10 +64,11 @@ const AppointmentForm = ({ addAppointment }) => {
 							onChange={(e) => setTask(e.target.value)}
 							className="">
 						
-							<option value="grapefruit">Grapefruit</option>
-							<option value="lime">Lime</option>
-							<option value="coconut">Coconut</option>
-							<option value="mango">Mango</option>
+							<option ></option>
+							<option value="orange" className="text-orange-400">orange</option>
+							<option value="pink" className="text-pink-300">pink</option>
+							<option value="blue" className="text-blue-400">blue</option>
+							<option value="purple" className="text-purple-400">purple</option>
 						</select>
 					</div>
 				</div>

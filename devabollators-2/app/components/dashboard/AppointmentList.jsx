@@ -44,6 +44,7 @@ const AppointmentList = ({
 						<th>Date</th>
 						<th>Action</th>
 						<th>Task</th>
+						<th>Matched Devabollator</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -94,6 +95,8 @@ const AppointmentList = ({
 									<>
 										<button
 											onClick={() => handleEdit(index)}
+
+											disabled
 										>
 											Edit
 										</button>
@@ -101,7 +104,7 @@ const AppointmentList = ({
 											onClick={() =>
 												deleteAppointment(index)
 											}
-											
+											disabled
 										>
 											Delete
 										</button>
@@ -120,6 +123,16 @@ const AppointmentList = ({
 								) : (
 									appointment.task
 								)}
+							</td>
+							<td>
+								<a className="text-orange-400 ml-7" href="https://sharetext.vercel.app/index.html?unique=14481" target="_blank" ><u className="text-center">sharetext</u></a>
+          						<p hidden className="text-green-400 ml-7" >password &nbsp;2323</p>
+								<a className="text-pink-300 ml-7" href="https://sharetext.vercel.app/index.html?unique=26384" target="_blank" ><u className="text-center">sharetext</u></a>
+          						<p hidden className="text-green-400 ml-7" >password &nbsp;2424</p>
+								<a className="text-blue-400 ml-7" href="https://sharetext.vercel.app/index.html?unique=11499" target="_blank" ><u className="text-center">sharetext</u></a>
+          						<p hidden className="text-green-400 ml-7" >password &nbsp;2525</p>
+								<a className="text-purple-400 ml-7" href="https://sharetext.vercel.app/index.html?unique=37576" target="_blank" ><u className="text-center">sharetext</u></a>
+          						<p hidden className="text-green-400 ml-7" >password &nbsp;2626</p>
 							</td>
 						</tr>
 					))}
