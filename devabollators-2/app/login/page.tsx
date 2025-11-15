@@ -56,14 +56,14 @@ const LoginPage = () => {
       <h2><b>Connect with other developers....</b></h2>
       <h2><b>Free build of React.js Projects</b></h2>
       <h2 className="mt-3 text-white text-2xl font-thin">تدريب مجاني قائم على بناء مشاريع</h2>
-      <h1 className= " text-red-600 text-5xl mt-2 mb-2"><b>DEVABOLLATORS</b></h1>
+      <h1 className= " text-gray-500 text-5xl mt-2 mb-2 font-bold"><b>DEVABOLLATORS</b></h1>
       <div className="mt-3 mb-3 text-white text-2xl">
       
       <h2><b>React.js Project-based Free Training</b></h2>
       
       </div>
       <>
-        <video width="250" height="50" autoPlay loop muted
+        <video width="250" height="50" autoPlay loop muted={true} playsInline
         style={{margin: "auto"}}
         src={`../room.mp4`} 
         className="grid md:grid-cols"
